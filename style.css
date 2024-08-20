@@ -26,6 +26,13 @@ div,
 canvas {
   vertical-align: top;
 }
+img {
+  width: 100%;
+}
+#menu img {
+  width: 100%;
+  max-height: 300px;
+}
 
 ::-moz-selection {
   /* Code for Firefox */
@@ -56,6 +63,7 @@ canvas {
   border-radius: 0.9em;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
   overflow: hidden;
+  background-color: #fff;
 }
 
 #menu .title {
