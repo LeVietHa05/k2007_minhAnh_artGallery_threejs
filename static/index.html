@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.167.1/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.167.1/examples/jsm/",
+                "three/poiterLockControls": "https://cdn.jsdelivr.net/npm/three@0.167.1/examples/jsm/controls/PointerLockControls.js"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="background_menu">
+        <div id="menu">
+            <div class="img_container" id="">
+                <img src="./img/IMG_20230226_162052.jpg" alt="dong lua" id="">
+            </div>
+            <div class="content">
+                <h1>Art Gallery</h1>
+                <div>
+                    <p>this is an interative 3D Gallery</p>
+                    <p>Made using hardword and three.js</p>
+                </div>
+                <div>
+                    <p>intruction</p>
+                    <p>Arrow Keys</p>
+                    <p>Look around with mouse</p>
+                </div>
+                <div id="play_button">
+                    <p>Enter The Gallery</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="audio-control">
+        <button id="start-audio">Start Audio Guide</button>
+        <button id="stop-audio">Stop Audio Guide</button>
+    </div> -->
+    <div>
+        <div id="edit_button" style="background-color: white; display: inline-block;">Edit</div>       
+    </div>
+    <div id="painting_info"></div>
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>

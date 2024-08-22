@@ -1,0 +1,74 @@
+[
+  {
+    "imgSrc": "./artwork/1.jpg",
+    "width": 4,
+    "height": 3,
+    "position": {
+      "x": 15,
+      "y": 5,
+      "z": -24.99
+    },
+    "rotationY": 0,
+    "info": {
+      "title": "Painting 1",
+      "artist": "Artist 1",
+      "description": "Description 1",
+      "year": "Year 1",
+      "paintingID": 0
+    }
+  },
+  {
+    "imgSrc": "./artwork/2.jpg",
+    "width": 4,
+    "height": 3,
+    "position": {
+      "x": -15,
+      "y": 5,
+      "z": -24.99
+    },
+    "rotationY": 0,
+    "info": {
+      "title": "Painting 2",
+      "artist": "Artist 2",
+      "description": "Description 2",
+      "year": "Year 2",
+      "paintingID": 1
+    }
+  },
+  {
+    "imgSrc": "./artwork/3.jpg",
+    "width": 4,
+    "height": 3,
+    "position": {
+      "x": 15,
+      "y": 5,
+      "z": 24.99
+    },
+    "rotationY": 3.141592653589793,
+    "info": {
+      "title": "Painting 3",
+      "artist": "Artist 3",
+      "description": "Description 3",
+      "year": "Year 3",
+      "paintingID": 0
+    }
+  },
+  {
+    "imgSrc": "./artwork/4.jpg",
+    "width": 4,
+    "height": 3,
+    "position": {
+      "x": -15,
+      "y": 5,
+      "z": 24.99
+    },
+    "rotationY": 3.141592653589793,
+    "info": {
+      "title": "Painting 4",
+      "artist": "Artist 4",
+      "description": "Description 4",
+      "year": "Year 4",
+      "paintingID": 1
+    }
+  }
+]
