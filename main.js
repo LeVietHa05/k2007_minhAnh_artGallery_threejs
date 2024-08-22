@@ -1,44 +1,44 @@
 
-import { scene, setupScene } from './utils/scene.js';
-import { createWalls } from './utils/walls.js';
-import { createFloor } from './utils/floor.js';
-import { createCeiling } from './utils/ceiling.js';
-import { setupLights } from './utils/lighting.js';
-import { createBoundingBoxes } from './utils/boundingBox.js';
-import { createPaintings } from './utils/paintings.js';
-import { setupRendering } from './utils/rendering.js';
-import { setupEventListeners } from './utils/eventListeners.js';
-import { addObjectToScene } from './utils/sceneHelper.js';
+import * as Scene from './utils/scene.js';
+import * as Wall from './utils/walls.js';
+import * as Floor from './utils/floor.js';
+import * as Ceil from './utils/ceiling.js';
+import * as Lighting from './utils/lighting.js';
+import * as Bounding from './utils/boundingBox.js';
+import * as Paint from './utils/paintings.js';
+import * as Render from './utils/rendering.js';
+import * as Setup from './utils/eventListeners.js';
+import * as Helper from './utils/sceneHelper.js';
 // import { setupAudio } from './utils/audioGuide.js';
 import { clickHandle, hoverHandle } from './utils/clickHandle.js';
 import { createGlowingFrame } from './utils/bloom.js';
 
-export let { camera, controls, renderer } = setupScene();
+export let { camera, controls, renderer } = Scene.setupScene();
 
 // setupAudio(camera);
 
-const walls = createWalls(scene);
+const walls = Wall.createWalls(Scene.scene);
 
-const floor = createFloor(scene);
+const floor = Floor.createFloor(Scene.scene);
 
-const ceiling = createCeiling(scene);
+const ceiling = Ceil.createCeiling(Scene.scene);
 
-const paintings = createPaintings(scene);
+const paintings = Paint.createPaintings(Scene.scene);
 console.log(paintings);
 
-setupLights(scene, paintings);
+Lighting.setupLights(Scene.scene, paintings);
 
-createBoundingBoxes(walls)
+Bounding.createBoundingBoxes(walls)
 
-createBoundingBoxes(paintings)
+Bounding.createBoundingBoxes(paintings)
 
-addObjectToScene(scene, paintings);
+Helper.addObjectToScene(Scene.scene, paintings);
 
-const glowingFrame = createGlowingFrame(scene, paintings);
+const glowingFrame = createGlowingFrame(Scene.scene, paintings);
 
-setupEventListeners(controls);
+Setup.setupEventListeners(controls);
 
-// clickHandle(renderer, camera, paintings, glowingFrame);
+clickHandle(renderer, camera, paintings, glowingFrame);
 hoverHandle(renderer, camera, paintings, glowingFrame);
 
-setupRendering(scene, camera, renderer, paintings, controls, walls);
+Render.setupRendering(Scene.scene, camera, renderer, paintings, controls, walls);

@@ -3,6 +3,10 @@ import { displayPaintingInfo, hidePaintingInfo } from './paintingInfo.js';
 
 let mouse = new THREE.Vector2();
 let raycaster = new THREE.Raycaster();
+export let isNearPainting = false;
+export let isClickedPainting = false;
+export let isHoverPainting = false;
+export let paintingToShow = null;
 
 export function clickHandle(renderer, camera, paintings, frames) {
     renderer.domElement.addEventListener('click', (e) => {
@@ -13,6 +17,19 @@ export function clickHandle(renderer, camera, paintings, frames) {
         onclick(camera, paintings, frames);
 
     }, false);
+}
+
+export function nearCheck(camera, paintings) {
+    const distanceThreshold = 8.0;
+    let painting = paintings.find(painting => {
+        return camera.position.distanceTo(painting.position) < distanceThreshold;
+    })
+    if (painting) {
+        paintingToShow = painting;
+        isNearPainting = true;
+    } else {
+        isNearPainting = false;
+    }
 }
 
 export function hoverHandle(renderer, camera, paintings, frames) {
@@ -31,16 +48,18 @@ function onHover(camera, paintings, frames) {
     const intersects = raycaster.intersectObjects(paintings);
 
     if (intersects.length > 0) {
-        const painting = intersects[0].object;
-        let paintingID = painting.userData.info.paintingID;
+        isHoverPainting = true;
+        paintingToShow = intersects[0].object;
+        let paintingID = paintingToShow.userData.info.paintingID;
         frames.forEach(outlines => {
             outlines.visible = false;
         });
         frames[paintingID].visible = !frames[paintingID].visible;
-        displayPaintingInfo(painting.userData.info);
+        // displayPaintingInfo(painting.userData.info);
     }
     else {
-        hidePaintingInfo();
+        isHoverPainting = false;
+        // hidePaintingInfo();
         frames.forEach(outlines => {
             outlines.visible = false;
         });
@@ -53,18 +72,20 @@ function onclick(camera, paintings, frames) {
     const intersects = raycaster.intersectObjects(paintings);
 
     if (intersects.length > 0) {
-        const painting = intersects[0].object;
-        console.log(painting.userData.info.title);
-        let paintingID = painting.userData.info.paintingID;
+        isClickedPainting = true;
+        paintingToShow = intersects[0].object;
+        console.log(paintingToShow.userData.info.title);
+        let paintingID = paintingToShow.userData.info.paintingID;
         frames.forEach(outlines => {
             outlines.visible = false;
         });
         frames[paintingID].visible = !frames[paintingID].visible;
-        displayPaintingInfo(painting.userData.info);
+        // displayPaintingInfo(painting.userData.info);
         //window.open(painting.userData.link, '_blank');
     }
     else {
-        hidePaintingInfo();
+        isClickedPainting = false;
+        // hidePaintingInfo();
         frames.forEach(outlines => {
             outlines.visible = false;
         });

@@ -1,10 +1,10 @@
 import * as THREE from 'three';
 
-import { paintingData } from './paintingData.js';
+import * as Painting from './paintingData.js';
 
 export function createPaintings(scene) {
     let paintings = [];
-    paintingData.forEach(data => {
+    Painting.paintingData.forEach(data => {
         const painting = new THREE.Mesh(
             new THREE.PlaneGeometry(data.width, data.height),
             new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load(data.imgSrc) })

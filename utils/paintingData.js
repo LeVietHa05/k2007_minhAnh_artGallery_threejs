@@ -1,5 +1,4 @@
 
-
 export const paintingData = [
     //Front wall
     ...Array.from({ length: 2 }, (_, i) => {

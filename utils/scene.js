@@ -5,7 +5,7 @@ import { PointerLockControls } from 'three/poiterLockControls'
 export const scene = new THREE.Scene();
 let camera, controls, renderer;
 
-export const setupScene = () => {
+export function setupScene() {
 
     camera = new THREE.PerspectiveCamera(
         60, // Field of view
