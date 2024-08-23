@@ -44,7 +44,8 @@ export function clickHandle(renderer, camera, paintings, frames) {
                 isClickedPainting = false;
                 const intersectionPoint = intersects[0].point;
                 offset.copy(intersectionPoint).sub(paintingToShow.position);
-                offset2.copy(intersectionPoint).sub(frames[paintingID].position);
+                //somehow the frame group 's position is relative to the painting
+                offset2.copy(paintingToShow.position).sub(frames[paintingID].position);
             }
         } else {
             isClickedPainting = false;
@@ -86,6 +87,7 @@ export function hoverHandle(renderer, camera, paintings, frames) {
 
                 raycaster.ray.intersectPlane(planeZ, newPoint);
                 paintingToShow.position.copy(newPoint.sub(offset));
+                console.log(paintingToShow.position);
 
                 let paintingID = paintingToShow.userData.info.paintingID;
                 frames[paintingID].position.copy(newPoint.sub(offset2));
