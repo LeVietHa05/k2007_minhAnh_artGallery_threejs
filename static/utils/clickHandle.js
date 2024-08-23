@@ -34,6 +34,7 @@ export function clickHandle(renderer, camera, paintings, frames) {
             paintingToShow = intersects[0].object;
             console.log(paintingToShow.userData.info.title);
             let paintingID = paintingToShow.userData.info.paintingID;
+            console.log(paintingID);
             frames[paintingID].visible = !frames[paintingID].visible;
             if (!isEdit) {
                 isClickedPainting = true;
@@ -87,11 +88,11 @@ export function hoverHandle(renderer, camera, paintings, frames) {
 
                 raycaster.ray.intersectPlane(planeZ, newPoint);
                 paintingToShow.position.copy(newPoint.sub(offset));
-                console.log(paintingToShow.position);
+                // console.log(paintingToShow.position);
 
                 let paintingID = paintingToShow.userData.info.paintingID;
                 frames[paintingID].position.copy(newPoint.sub(offset2));
-                console.log(frames[paintingID].position);
+                // console.log(frames[paintingID].position);
             }
         }
     }, false);
@@ -109,6 +110,7 @@ function onHover(camera, paintings, frames) {
         isHoverPainting = true;
         paintingToShow = intersects[0].object;
         let paintingID = paintingToShow.userData.info.paintingID;
+        console.log(paintingID);
         frames.forEach(outlines => {
             outlines.visible = false;
         });

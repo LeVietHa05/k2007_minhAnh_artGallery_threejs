@@ -13,7 +13,7 @@ export function setupScene() {
         0.1, // Near clipping plane
         1000 // Far clipping plane
     )
-    camera.position.set(0, 5, 0);
+    camera.position.set(22.5, 5, 22.5);
     scene.add(camera);
 
     renderer = new THREE.WebGLRenderer({ antialias: true });// Enable antialiasing

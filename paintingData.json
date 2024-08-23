@@ -50,7 +50,7 @@
       "artist": "Artist 3",
       "description": "Description 3",
       "year": "Year 3",
-      "paintingID": 0
+      "paintingID": 2
     }
   },
   {
@@ -68,7 +68,7 @@
       "artist": "Artist 4",
       "description": "Description 4",
       "year": "Year 4",
-      "paintingID": 1
+      "paintingID": 3
     }
   }
 ]

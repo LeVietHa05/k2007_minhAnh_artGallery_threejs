@@ -9,7 +9,7 @@ export async function createPaintings(scene) {
         .then(res => res.json())
         .then(e => {
             paintingData = e;
-            paintingData.forEach(data => {
+            paintingData.forEach((data, i) => {
                 const outlineGroup = new THREE.Group();
                 const frameMaterial = new THREE.MeshPhongMaterial({
                     color: 0xff0000,
@@ -20,30 +20,36 @@ export async function createPaintings(scene) {
                     transparent: true,
                     opacity: 1
                 })
-
+                let z;
+                if (i % 2 == 0) {
+                    z = data.position.z + 0.01;
+                } else {
+                    z = data.position.z - 0.01;
+                }
+                z = data.position.z
                 const topOutline = new THREE.Mesh(
                     new THREE.PlaneGeometry(data.width + frameThickness, frameThickness),
                     frameMaterial
                 );
-                topOutline.position.set(data.position.x, data.position.y + data.height / 2 + frameThickness / 2, data.position.z + 0.01);
+                topOutline.position.set(data.position.x, data.position.y + data.height / 2 + frameThickness / 2, z);
 
                 const bottomOutline = new THREE.Mesh(
                     new THREE.PlaneGeometry(data.width + frameThickness, frameThickness),
                     frameMaterial
                 );
-                bottomOutline.position.set(data.position.x, data.position.y - data.height / 2 - frameThickness / 2, data.position.z + 0.01);
+                bottomOutline.position.set(data.position.x, data.position.y - data.height / 2 - frameThickness / 2, z);
 
                 const leftOutline = new THREE.Mesh(
                     new THREE.PlaneGeometry(frameThickness, data.height + frameThickness),
                     frameMaterial
                 );
-                leftOutline.position.set(data.position.x - data.width / 2 - frameThickness / 2, data.position.y, data.position.z + 0.01);
+                leftOutline.position.set(data.position.x - data.width / 2 - frameThickness / 2, data.position.y, z);
 
                 const rightOutline = new THREE.Mesh(
                     new THREE.PlaneGeometry(frameThickness, data.height + frameThickness),
                     frameMaterial
                 );
-                rightOutline.position.set(data.position.x + data.width / 2 + frameThickness / 2, data.position.y, data.position.z + 0.01);
+                rightOutline.position.set(data.position.x + data.width / 2 + frameThickness / 2, data.position.y, z);
 
 
                 outlineGroup.add(topOutline, bottomOutline, leftOutline, rightOutline);

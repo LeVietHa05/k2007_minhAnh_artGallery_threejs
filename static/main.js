@@ -24,6 +24,7 @@ export let { camera, controls, renderer } = Scene.setupScene();
     const ceiling = Ceil.createCeiling(Scene.scene);
 
     let { paintings, frames } = await Paint.createPaintings(Scene.scene)
+    console.log(frames)
     console.log(paintings)
 
     Lighting.setupLights(Scene.scene);
