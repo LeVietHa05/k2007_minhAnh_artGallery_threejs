@@ -55,10 +55,11 @@ export async function createPaintings(scene) {
                 outlineGroup.add(topOutline, bottomOutline, leftOutline, rightOutline);
                 outlineGroup.visible = false;
 
-
+                const paintingTexture = new THREE.TextureLoader().load(data.imgSrc);
+                paintingTexture.colorSpace = THREE.SRGBColorSpace;
                 const painting = new THREE.Mesh(
                     new THREE.PlaneGeometry(data.width, data.height),
-                    new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load(data.imgSrc) })
+                    new THREE.MeshBasicMaterial({ map:  paintingTexture})
                 );
 
                 painting.position.set(data.position.x, data.position.y, data.position.z);

@@ -14,8 +14,8 @@ let offset = new THREE.Vector3();
 let offset2 = new THREE.Vector3();
 
 document.querySelector('#edit_button').addEventListener('click', (e) => {
-    isEdit = !isEdit;
-    e.target.textContent = "Edit mode: " + (isEdit ? "ON" : "OFF");
+    // isEdit = !isEdit;
+    e.target.textContent = isEdit ? 'Done' : 'Edit';
 })
 
 export function clickHandle(renderer, camera, paintings, frames) {
@@ -59,7 +59,7 @@ export function clickHandle(renderer, camera, paintings, frames) {
 
 export function nearCheck(camera, paintings) {
     if (!isEdit) {
-        const distanceThreshold = 8.0;
+        const distanceThreshold = 5.5;
         let painting = paintings.find(painting => {
             return camera.position.distanceTo(painting.position) < distanceThreshold;
         })
