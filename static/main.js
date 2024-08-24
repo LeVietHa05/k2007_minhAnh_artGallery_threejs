@@ -42,6 +42,6 @@ export let { camera, controls, renderer } = Scene.setupScene();
     clickHandle(renderer, camera, paintings, frames);
     hoverHandle(renderer, camera, paintings, frames);
 
-    Render.setupRendering(Scene.scene, camera, renderer, paintings, controls, walls);
+    Render.setupRendering(Scene.scene, camera, renderer, paintings,frames, controls, walls);
 
 })()

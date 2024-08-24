@@ -42,19 +42,19 @@ export function createWalls(scene) {
 
     //three walls in the middle of the room
     const wall1 = new THREE.Mesh(
-        new THREE.BoxGeometry(25, 20, 0.1),
+        new THREE.BoxGeometry(25, 20, 1),
         new THREE.MeshBasicMaterial({ map: wallTexture, side: THREE.DoubleSide })
     )
     wall1.position.z = 12.425;
 
     const wall2 = new THREE.Mesh(
-        new THREE.BoxGeometry(25, 20, 0.1),
+        new THREE.BoxGeometry(25, 20,1),
         new THREE.MeshBasicMaterial({ map: wallTexture, side: THREE.DoubleSide })
     )
     wall2.position.z = -12.425;
 
     const wall3 = new THREE.Mesh(
-        new THREE.BoxGeometry(25, 20, 0.1),
+        new THREE.BoxGeometry(25, 20, 1),
         new THREE.MeshBasicMaterial({ map: wallTexture, side: THREE.DoubleSide })
     )
     wall3.position.z = 0;

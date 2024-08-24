@@ -8,6 +8,8 @@ export let isClickedPainting = false;
 export let isHoverPainting = false;
 export let paintingToShow = null;
 
+let lastPainting = -1;
+
 export let isEdit = false;
 let isDragging = false;
 let offset = new THREE.Vector3();
@@ -16,6 +18,14 @@ let offset2 = new THREE.Vector3();
 document.querySelector('#edit_button').addEventListener('click', (e) => {
     // isEdit = !isEdit;
     e.target.textContent = isEdit ? 'Done' : 'Edit';
+})
+
+document.querySelector("#show_intruction").addEventListener('click', (e) => {
+    if (document.querySelector("#instruction_text").classList.contains("show")) {
+        document.querySelector("#instruction_text").classList.remove("show");
+    } else {
+        document.querySelector("#instruction_text").classList.add("show");
+    }
 })
 
 export function clickHandle(renderer, camera, paintings, frames) {
@@ -34,7 +44,7 @@ export function clickHandle(renderer, camera, paintings, frames) {
             paintingToShow = intersects[0].object;
             console.log(paintingToShow.userData.info.title);
             let paintingID = paintingToShow.userData.info.paintingID;
-            console.log(paintingID);
+
             frames[paintingID].visible = !frames[paintingID].visible;
             if (!isEdit) {
                 isClickedPainting = true;
@@ -57,7 +67,7 @@ export function clickHandle(renderer, camera, paintings, frames) {
     }, false);
 }
 
-export function nearCheck(camera, paintings) {
+export function nearCheck(camera, paintings, frames) {
     if (!isEdit) {
         const distanceThreshold = 5.5;
         let painting = paintings.find(painting => {
@@ -65,8 +75,14 @@ export function nearCheck(camera, paintings) {
         })
         if (painting) {
             paintingToShow = painting;
+            let paintingID = paintingToShow.userData.info.paintingID;
+            lastPainting = paintingID;
+            frames[paintingID].visible = true;
             isNearPainting = true;
         } else {
+            if (lastPainting >= 0 && !isClickedPainting && !isHoverPainting) {
+                frames[lastPainting].visible = false;
+            }
             isNearPainting = false;
         }
     }
@@ -110,7 +126,7 @@ function onHover(camera, paintings, frames) {
         isHoverPainting = true;
         paintingToShow = intersects[0].object;
         let paintingID = paintingToShow.userData.info.paintingID;
-        console.log(paintingID);
+        // console.log(paintingID);
         frames.forEach(outlines => {
             outlines.visible = false;
         });

@@ -1,26 +1,148 @@
 [
   {
     "imgSrc": "./artwork/artwork1.png",
-    "width": 3.3,
-    "height": 5,
+    "width": 3,
+    "height": 4.5,
     "position": {
       "x": 15,
       "y": 5,
-      "z": -24.99
+      "z": 24.99
     },
-    "rotationY": 0,
+    "rotationY": 3.141592653589793,
     "info": {
-      "title": "Painting 1",
-      "artist": "Artist 1",
-      "description": "Description 1",
-      "year": "Year 1",
-      "paintingID": 0
+      "title": "Ru con",
+      "poem": "Gió mùa thu mẹ ru con ngủ,<br>Năm canh dài, mẹ thức đủ năm canh",
+      "description": "Câu ca dao trên đã đi vào tiềm thức của tôi từ lúc nhỏ mỗi khi mẹ hát ru tôi ngủ. Đó là vẻ đẹp tâm hồn mà tuổi thơ tôi may mắn đã được cảm nhận. <br>  Bức vẽ sử dụng gam màu tươi sáng tượng trưng cho sự hạnh phúc trong tâm hồn. Bố cục tự do mềm mại như suối tóc của người mẹ che chở, ôm ấp đứa con bé bỏng.",
+      "year": "2022",
+      "paintingID": 0,
+      "material": "Oil painting",
+      "size": "40x60cm"
     }
   },
   {
     "imgSrc": "./artwork/artwork2.png",
-    "width": 3.3,
+    "width": 3,
+    "height": 4.5,
+    "position": {
+      "x": 5,
+      "y": 5,
+      "z": 24.99
+    },
+    "rotationY": 3.141592653589793,
+    "info": {
+      "title": "Duyên trầu - cau",
+      "poem": "Trúc xinh trúc mọc đầu đình <br> Em xinh em đứng một mình cũng xinh.<br> Trúc xinh trúc mọc bờ ao <br> Em xinh em đứng chỗ nào cũng xinh'",
+      "description": "Cô gái trong ca dao gắn liền với hình ảnh khóm trúc, mái đình cổ xưa…. Tôi đã vẽ lại hình ảnh đó trong trí tưởng tượng của mình về một người phụ nữ truyền thống. <br> Cô gái với tà áo dài bên rặng trúc xanh yên bình. Bên dưới là hình ảnh đóa sen thơm ngát tượng trưng cho vẻ đẹp tâm hồn người phụ nữ. Cá chép hóa rồng là hình tượng của một tương lai rực rỡ.",
+      "year": "2023",
+      "paintingID": 1,
+      "material": "Oil painting",
+      "size": "40x60cm"
+    }
+  },
+  {
+    "imgSrc": "./artwork/artwork3.png",
+    "width": 4,
     "height": 5,
+    "position": {
+      "x": -5,
+      "y": 5,
+      "z": 24.99
+    },
+    "rotationY": 3.141592653589793,
+    "info": {
+      "title": "Duyên",
+      "poem": "Trúc xinh trúc mọc đầu đình <br> Em xinh em đứng một mình cũng xinh.<br> Trúc xinh trúc mọc bờ ao <br> Em xinh em đứng chỗ nào cũng xinh'",
+      "description": "Cô gái trong ca dao gắn liền với hình ảnh khóm trúc, mái đình cổ xưa…. Tôi đã vẽ lại hình ảnh đó trong trí tưởng tượng của mình về một người phụ nữ truyền thống. <br> Cô gái với tà áo dài bên rặng trúc xanh yên bình. Bên dưới là hình ảnh đóa sen thơm ngát tượng trưng cho vẻ đẹp tâm hồn người phụ nữ. Cá chép hóa rồng là hình tượng của một tương lai rực rỡ.",
+      "year": "2024",
+      "paintingID": 2,
+      "material": "Oil painting",
+      "size": "40x50cm"
+    }
+  },
+  {
+    "imgSrc": "./artwork/artwork4.png",
+    "width": 4,
+    "height": 5,
+    "position": {
+      "x": -15,
+      "y": 5,
+      "z": 24.99
+    },
+    "rotationY": 3.141592653589793,
+    "info": {
+      "title": "Nét xưa",
+      "poem": "Nhác trông con mắt đáng trăm<br> Miệng cười đáng chục, hàm răng đáng nghìn<br>Nhác trông con mắt ưa nhìn<br>Đáng trăm cũng chuộng, đáng nghìn cũng mua",
+      "description": " Đây là cô gái trong trí tưởng tượng của tôi mỗi khi liên tưởng đến câu ca dao. Người phụ nữ Việt Nam trong tôi là hình ảnh dịu dàng với yếm đào và miệng cười như thể Hoa sen tuy chất phác, giản dị nhưng vẫn đầy nữ tính.<br> Những hình ảnh này thường thoáng qua tôi trong những giấc mơ khi tôi nghĩ về những người phụ nữ Cổ xưa . Nó gắn liền với hỉnh ảnh con cỏ, hoa sen, áo yếm, khăn vấn đội đầu…",
+      "year": "2023",
+      "paintingID": 3,
+      "material": "Oil painting",
+      "size": "40x50cm"
+    }
+  },
+  {
+    "imgSrc": "./artwork/artwork5.png",
+    "width": 4,
+    "height": 5,
+    "position": {
+      "x": -24.99,
+      "y": 5,
+      "z": 12.5
+    },
+    "rotationY": 1.570796326794896,
+    "info": {
+      "title": "Gánh nặng thời gian",
+      "poem": "Ai người chia sớt nỗi buồn <br>Mẹ tôi gánh mãi hoàng hôn một mình",
+      "description": "Câu ca dao trên nói về sự hy sinh của mỗi người Mẹ Việt Nam. Mẹ luôn là người hy sinh vì chồng, vì con và chịu bao áp lực vô hình trong cuộc sống. Tôi chọn hình tượng người mẹ đang còng lưng gánh chiếc đồng hồ thời gian nhằm lột tả ý nghĩa về sự hy sinh của Mẹ như lời câu ca dao cổ xưa. Màu xanh chủ đạo được sử dụng như màu tuổi thanh xuân của Mẹ đã lặng lẽ qua đi theo năm tháng. ",
+      "year": "2023",
+      "paintingID": 4,
+      "material": "Oil painting",
+      "size": "40x50cm"
+    }
+  },
+  {
+    "imgSrc": "./artwork/artwork6.png",
+    "width": 3,
+    "height": 4.5,
+    "position": {
+      "x": -24.99,
+      "y": 5,
+      "z": 0
+    },
+    "rotationY": 1.570796326794896,
+    "info": {
+      "title": "Lòng Mẹ",
+      "poem": "Con dẫu lớn vẫn là con của Mẹ <br> Đi suốt đời Lòng mẹ vẫn theo con",
+      "description": "Câu ca dao là biểu tượng vĩnh cữu cho Lòng mẹ đối với con cái.  Với mẹ con vẫn luôn là thơ bé như ngày nào. Bố cục bức vẽ sử dụng các họa tiết, đường nét Tròn, Mềm mại làm cho hai mẹ con như hòa quyện vào nhau dưới bóng cây lớn của tình thương. ",
+      "year": "2022",
+      "paintingID": 5,
+      "material": "Oil painting",
+      "size": "40x60cm"
+    }
+  },
+  {
+    "imgSrc": "./artwork/artwork7.png",
+    "width": 4,
+    "height": 5,
+    "position": {
+      "x": -24.99,
+      "y": 5,
+      "z": -12.5
+    },
+    "rotationY": 1.570796326794896,
+    "info": {
+      "title": "Ngóng trông",
+      "poem": "Anh đi em ở lại nhà<br> Hai vai gánh vác mẹ già, con thơ<br> Lầm than bao quản muối dưa <br> Anh đi anh liệu chen đua với đời",
+      "description": "Những người phụ nữ Việt Nam luôn chịu thương chịu khó, hết mình về gia đình. Bức tranh thể hiện cái Hồn của câu ca dao đó là hình ảnh người Vợ, người mẹ lam lũ lo cho gia đình và ngóng chờ người chồng đang ở phương xa.<br> Con thuyền thì nhỏ, sông nước thì mênh mông như một tương lai vô định. Lối vẽ tả thực như muốn gợi nhớ đến những hình ảnh giản dị đời thường của người phụ nữ Việt Nam.",
+      "year": "2022",
+      "paintingID": 6,
+      "material": "Oil painting",
+      "size": "40x50cm"
+    }
+  },
+  {
+    "imgSrc": "./artwork/artwork8.png",
+    "width": 3,
+    "height": 4.5,
     "position": {
       "x": -15,
       "y": 5,
@@ -28,47 +150,373 @@
     },
     "rotationY": 0,
     "info": {
-      "title": "Painting 2",
-      "artist": "Artist 2",
-      "description": "Description 2",
-      "year": "Year 2",
-      "paintingID": 1
+      "title": "Cơn mưa mùa hạ",
+      "poem": "Thân em như hạt mưa rào,<br> Hạt rơi xuống giếng, hạt vào vườn hoa.<br> Thân em như hạt mưa sa,<br> Hạt vào đài các, hạt ra ruộng cày",
+      "description": "Câu ca dao trên nói lên thân phận may rủi của người phụ nữ trong xã hội phong kiến. Cuộc sống của họ có thể một bước lên Tiên hay vất vả lầm than nếu được gả vào các gia đình chồng khác nhau. Hình ảnh mô tả một người phụ nữ lam lũ đang làm việc trên cánh đồng với tư thế lao động luôn phải nhìn xuống đất nhằm thể hiện sự bế tắc, vô định trong xã hội cũ.",
+      "year": "2023",
+      "paintingID": 7,
+      "material": "Oil painting",
+      "size": "40x60cm"
     }
   },
   {
-    "imgSrc": "./artwork/artwork3.png",
-    "width": 3.3,
+    "imgSrc": "./artwork/artwork9.png",
+    "width": 3,
+    "height": 4.5,
+    "position": {
+      "x": -5,
+      "y": 5,
+      "z": -24.99
+    },
+    "rotationY": 0,
+    "info": {
+      "title": "Bốn Mùa",
+      "poem": "Cánh cò cõng nắng cõng mưa,<br> Mẹ tôi cõng cả bốn mùa gió sương",
+      "description": "Câu ca dao trên là sự tảo tần của người Mẹ Việt Nam. Tôi đã thể hiện hình ảnh đó qua chiếc bình gốm. Một món đồ trang trí thủ công mà Mẹ tôi rất yêu thích để cắm hoa thường ngày. Cho dù là ngày Xuân mưa phùn, ngày Hạ nắng rát hay Thu se lạnh, Đông giá buốt thì Mẹ vẫn tảo tần gánh cả cuộc đời mỗi người con trên đôi vai gầy. Đó là sự chịu thương, chịu khó của người Mẹ Việt Nam, là nét đẹp muôn đờicủa người phụ nữ.",
+      "year": "2024",
+      "paintingID": 8,
+      "material": "Ceramic",
+      "size": "40cm"
+    }
+  },
+  {
+    "imgSrc": "./artwork/artwork10.png",
+    "width": 4,
     "height": 5,
+    "position": {
+      "x": 5,
+      "y": 5,
+      "z": -24.99
+    },
+    "rotationY": 0,
+    "info": {
+      "title": "Làm điệu",
+      "poem": "Ai xui má đỏ , môi hồng <br>Để anh nhác thấy đem lòng thương yêu",
+      "description": " Cô gái tạo dáng điệu đà nghiêng đầu vòng tay hình cầu vồng trên mái tóc. Gương mặt như đang  ngủ mà lại như đang chơi, đang làm điệu một mình nhằm nói lên việc điệu đà một cách tự nhiên trong mọi lúc mọi nơi.",
+      "year": "2022",
+      "paintingID": 6,
+      "material": "Oil painting",
+      "size": "40x50cm"
+    }
+  },
+  {
+    "imgSrc": "./artwork/artwork11.png",
+    "width": 3,
+    "height": 4,
     "position": {
       "x": 15,
       "y": 5,
-      "z": 24.99
+      "z": -24.99
     },
-    "rotationY": 3.141592653589793,
+    "rotationY": 0,
     "info": {
-      "title": "Painting 3",
-      "artist": "Artist 3",
-      "description": "Description 3",
-      "year": "Year 3",
-      "paintingID": 2
+      "title": "Cơn mưa đi ngang",
+      "poem": "",
+      "description": "Đơn giản là một hình ảnh đẹp tôi bắt gặp trên đường. Hình ảnh về những người mẹ, người vợ đang tần tảo mưu sinh thường ngày.<br> Trời mưa to, khung cảnh một màu xám xịt u tối hiện ra trước mắt nhưng người phụ nữ ấy vẫn mạnh mẽ giữa mưa giông. Sắc áo mưa màu hồng đan xen lẫn màu sắc của gánh hoa là tượng trưng cho niềm tin về một tương lai tươi sáng trong cuộc đời người mẹ, người vợ ấy. ",
+      "year": "2023",
+      "paintingID": 10,
+      "material": "Oil painting",
+      "size": "60x80cm"
     }
   },
   {
-    "imgSrc": "./artwork/artwork4.png",
-    "width": 3.3,
+    "imgSrc": "./artwork/artwork12.png",
+    "width": 3,
+    "height": 4,
+    "position": {
+      "x": 24.99,
+      "y": 5,
+      "z": -12.5
+    },
+    "rotationY": -1.5707963267948966,
+    "info": {
+      "title": "Giấc mơ của mẹ",
+      "poem": "",
+      "description": "Với người phụ nữ nói chung và phụ nữ Việt Nam nói riêng thì tình mẫu tử là sự thiêng liêng cao quý nhất. Trong mỗi giấc mơ của người Mẹ bao giờ cũng có hình bóng của con mình. Bức vẽ dùng gam màu Hồng chủ đạo trên nền đen nhằm lột tả sự ấm áp của tình mẹ con. Bố cục Mẹ và con nương tựa vào nhau, ôm ấp không thể tách rời. Em bé tuy nằm trong vòng tay mẹ nhưng lại trở thành 1 điểm tựa cho cuộc đời người Mẹ.",
+      "year": "2022",
+      "paintingID": 11,
+      "material": "Oil painting",
+      "size": "30x40cm"
+    }
+  },
+  {
+    "imgSrc": "./artwork/artwork13.png",
+    "width": 4,
     "height": 5,
     "position": {
-      "x": -15,
+      "x": 24.99,
       "y": 5,
-      "z": 24.99
+      "z": 0
+    },
+    "rotationY": -1.5707963267948966,
+    "info": {
+      "title": "Giấc mơ trưa",
+      "poem": "",
+      "description": "Buổi trưa cô gái đang mơ màng với những giấc mơ ngắn của mình. Bố cục được thể hiện theo chiều đứng như giấc ngủ vội vàng thường nhật của cô gái. Gương mặt cô gái thư thái, nhẹ nhõm và trong giấc mơ của mình vẫn có những hình ảnh rất đời thường như Ly trà sữa và những bông hoa nhỏ. Trong giấc ngủ chưa nhưng hình ảnh cô gái vẫn vô cùng quyến rũ với gương mặt bầu bĩnh và chiếc cổ dài kiêu sa. ",
+      "year": "2024",
+      "paintingID": 12,
+      "material": "Oil painting",
+      "size": "40x50cm"
+    }
+  },
+  {
+    "imgSrc": "./artwork/artwork14.png",
+    "width": 4,
+    "height": 5,
+    "position": {
+      "x": 24.99,
+      "y": 5,
+      "z": 12.5
+    },
+    "rotationY": -1.5707963267948966,
+    "info": {
+      "title": " Cô gái nhút nhát",
+      "poem": "",
+      "description": " Thiếu nữ đang che giấu gương mặt của mình dưới một chùm hoa rực rỡ. Cô gái e thẹn bởi chất nữ tính của mình nhưng vẫn đang ngầm khoe vẻ đẹp kiều diễm như những bông hoa đang nở rộ. Bàn tay cầm bông hoa đưa lên phía trước ngụ ý rằng người con gái này cho dù có e lệ, nhút nhát, che đậy vẻ bên ngoài của mình thì cô ấy vẫn luôn đẹp như đóa hoa kia. Vậy Người đàn ông nào đủ tinh ý để nhận ra điều này?",
+      "year": "2022",
+      "paintingID": 13,
+      "material": "Oil painting",
+      "size": "40x50cm"
+    }
+  },
+  {
+    "imgSrc": "./artwork/artwork15.png",
+    "width": 4,
+    "height": 5,
+    "position": {
+      "x": 6.125,
+      "y": 5,
+      "z": -13.1
     },
     "rotationY": 3.141592653589793,
     "info": {
-      "title": "Painting 4",
-      "artist": "Artist 4",
-      "description": "Description 4",
-      "year": "Year 4",
-      "paintingID": 3
+      "title": "Ngột ngạt",
+      "poem": "",
+      "description": "Tác phẩm thể hiện hình ảnh một người phụ nữ vô cùng trẻ trung quyến rũ những đang ngột ngạt trong dòng nước. Hình ảnh tả thực đó là để nhằm truyền tải thông điệp rằng với người phụ nữ, cho dù bạn có nhẫn nhịn, có chấp nhận chịu thua thiệt, chấp nhận là tầng lớp bên dưới của xã hội thì bạn vẫn luôn phải sống một cuộc đời ngột ngạt bởi những áp lực người khác mang lại. Chỉ khi chính bạn phải trở lên mạnh mẽ thì cuộc sống mới trở nên tốt đẹp hơn.",
+      "year": "2023",
+      "paintingID": 14,
+      "material": "Oil painting",
+      "size": "40x50cm"
+    }
+  },
+  {
+    "imgSrc": "./artwork/artwork16.png",
+    "width": 3,
+    "height": 4,
+    "position": {
+      "x": -6.125,
+      "y": 5,
+      "z": -13.1
+    },
+    "rotationY": 3.141592653589793,
+    "info": {
+      "title": "Tuổi hồng",
+      "poem": "",
+      "description": " Những cô gái tuổi 16, tuổi trăm rằm đang trong độ tuổi đẹp nhất của đời người. Cuộc sống trong mắt  cô gái ấy luôn có màu hồng và ngập tràn trong sự hân hoan, hạnh phúc. Những đóa hoa rắc tràn bố cục bức vẽ tượng trưng cho niềm vui của cô gái. Hoa che mái tóc, hoa trùm đôi mắt … Gương mặt cô ẩn hiện phía sau cùng bờ vai gợi cảm, cái cổ dày thon gọn đầy kiêu sa.",
+      "year": "2022",
+      "paintingID": 15,
+      "material": "Oil painting",
+      "size": "30x40cm"
+    }
+  },
+  {
+    "imgSrc": "./artwork/artwork17.png",
+    "width": 3,
+    "height": 4,
+    "position": {
+      "x": 6.125,
+      "y": 5,
+      "z": -11.8
+    },
+    "rotationY": 0,
+    "info": {
+      "title": "Duyên thầm",
+      "poem": "",
+      "description": "Bức vẽ thể hiện hình ảnh một cô gái tuổi mới lớn với vẻ đẹp thuần Việt và trong trẻo. Cô bé quay mặt vào trong bức tường nhằm biểu hiện tính nội tâm, chịu đựng của người phụ nữ truyền thống tuy nhiên vẫn không làm mất đi sự duyên dáng nữ tính.<br>Mặc dù không thể hiện gương mặt nhưng qua bút pháp vẫn thấy được vẻ đẹp kiêu sa của gương mặt bầu bĩnh, chiếc cổ gầy và mái tóc dài được vén buộc chỉn chu. Màu áo trắng và chiếc áo không cổ là hiện thân cho sự trong sáng của cô bé. ",
+      "year": "2023",
+      "paintingID": 16,
+      "material": "Oil painting",
+      "size": "40x50cm"
+    }
+  },
+  {
+    "imgSrc": "./artwork/artwork18.png",
+    "width": 4,
+    "height": 5,
+    "position": {
+      "x": -6.125,
+      "y": 5,
+      "z": -11.8
+    },
+    "rotationY": 0,
+    "info": {
+      "title": "Áp lực vô hình",
+      "poem": "",
+      "description": "Tác phẩm thể hiện hình ảnh một người phụ nữ vô cùng trẻ trung quyến rũ những đang ngột ngạt trong dòng nước. Hình ảnh tả thực đó là để nhằm truyền tải thông điệp rằng với người phụ nữ, cho dù bạn có nhẫn nhịn, có chấp nhận chịu thua thiệt, chấp nhận là tầng lớp bên dưới của xã hội thì bạn vẫn luôn phải sống một cuộc đời ngột ngạt bởi những áp lực người khác mang lại. Chỉ khi chính bạn phải trở lên mạnh mẽ thì cuộc sống mới trở nên tốt đẹp hơn.",
+      "year": "2022",
+      "paintingID": 17,
+      "material": "Oil painting",
+      "size": "40x50cm"
+    }
+  },
+  {
+    "imgSrc": "./artwork/artwork19.png",
+    "width": 4,
+    "height": 6,
+    "position": {
+      "x": 6.125,
+      "y": 5,
+      "z": -0.6
+    },
+    "rotationY": 3.141592653589793,
+    "info": {
+      "title": "Suy tư",
+      "poem": "",
+      "description": "Bức vẽ mô tả một người phụ nữ đang mơ ước về tương lai tự do phía trước. người phụ nữ này đang trong một tâm trạng suy tư vô định nên mơ ước được sổ lồng như loài chim bay lượn trên bầu trời.Gam màu trầm thể hiện cho sự bình yên trong cuộc sống hiện tại của cô ấy. ",
+      "year": "2024",
+      "paintingID": 18,
+      "material": "Oil painting",
+      "size": "40x60cm"
+    }
+  },
+  {
+    "imgSrc": "./artwork/artwork20.png",
+    "width": 3,
+    "height": 4,
+    "position": {
+      "x": -6.125,
+      "y": 5,
+      "z": -0.6
+    },
+    "rotationY": 3.141592653589793,
+    "info": {
+      "title": "Em gái nhỏ",
+      "poem": "",
+      "description": "Bé gái Mimi dễ thương đang quay lưng lại mà vẫn không giấu đi nét đẹp của mình. Chiếc váy xòe xinh xinh, mái tóc dài được Mẹ tết điệu đà... Bức tranh sử dụng gam màu hồng như lứa tuổi hồng của em bé. Đây là tác phẩm vẽ qua sự hồi tưởng bằng trí nhớ về em gái tôi ngày em còn nhỏ.",
+      "year": "2022",
+      "paintingID": 19,
+      "material": "Oil painting",
+      "size": "30x40cm"
+    }
+  },
+  {
+    "imgSrc": "./artwork/artwork21.png",
+    "width": 3,
+    "height": 4,
+    "position": {
+      "x": 6.125,
+      "y": 5,
+      "z": 0.6
+    },
+    "rotationY": 0,
+    "info": {
+      "title": "Bé gái",
+      "poem": "",
+      "description": "Bé gái Mimi dễ thương với chiếc váy màu xanh yêu thích. ",
+      "year": "2023",
+      "paintingID": 20,
+      "material": "Oil painting",
+      "size": "30x40cm"
+    }
+  },
+  {
+    "imgSrc": "./artwork/artwork22.png",
+    "width": 3,
+    "height": 4,
+    "position": {
+      "x": -6.125,
+      "y": 5,
+      "z": 0.6
+    },
+    "rotationY": 0,
+    "info": {
+      "title": "Trăng rằm",
+      "poem": "",
+      "description": "Vẫn lại là một cô gái mới lớn còn e lệ nhưng vẫn muốn khoe cái vẻ đẹp như trăng rằm của mình.Tấm lưng trần là trung tâm bố cục bức vẽ nhằm lột tả điều này.Xung quanh là đàn ong bướm rập rìu như muôn vàn các chàng trai đang muốn tiếp cận cô gái ấy. Cô gái dùng hai bàn tay ôm lấy cơ thể mình như là một sự tự bảo vệ mình trước sự cám dỗ. ",
+      "year": "2024",
+      "paintingID": 21,
+      "material": "Oil painting",
+      "size": "30x40cm"
+    }
+  },
+  {
+    "imgSrc": "./artwork/artwork23.png",
+    "width": 3,
+    "height": 4,
+    "position": {
+      "x": 6.125,
+      "y": 5,
+      "z": 11.79
+    },
+    "rotationY": 3.141592653589793,
+    "info": {
+      "title": "Gương mặt dấu kín",
+      "poem": "",
+      "description": "Phụ nữ và Hoa như hai là một, như một mà là hai là bởi họ luôn đẹp như loài hoa và mỏng manh yếu đuối như những cánh hoa. Cả thế giới này tôn thờ vẻ đẹp đó nên cho dù họ là ai, họ ở đâu, họ là tầng lớp nào. Họ kiêu sa hay trần trụi thì vẫn là những bông hoa đẹp nhất. Bức tranh thể hiện nét đẹp của một người phụ nữ giấu mặt để nói lên điều đó.",
+      "year": "2024",
+      "paintingID": 22,
+      "material": "Oil painting",
+      "size": "30x40cm"
+    }
+  },
+  {
+    "imgSrc": "./artwork/artwork24.png",
+    "width": 3,
+    "height": 4,
+    "position": {
+      "x": -6.125,
+      "y": 5,
+      "z": 11.79
+    },
+    "rotationY": 3.141592653589793,
+    "info": {
+      "title": "Cô gái Iran",
+      "poem": "",
+      "description": "Phong Tục của người Hồi giáo thường bắt phụ nữ ra ngoài phải trùm đầu che đi mái tóc chính vì thế người phụ nữ rất thiệt thòi khi không được phô diễn vẻ đẹp chân thực của mình. Bức vẽ này tôi muốn lột tả vẻ đẹp đó. Người phụ nữ qua Ánh mắt đã thể hiện sự quyết liệt phá bỏ mọi giới hạn của nữ quyền truyền thống để hướng đến tương lai.",
+      "year": "2023",
+      "paintingID": 23,
+      "material": "Oil painting",
+      "size": "30x40cm"
+    }
+  },
+  {
+    "imgSrc": "./artwork/artwork25.png",
+    "width": 3,
+    "height": 4,
+    "position": {
+      "x": 6.125,
+      "y": 5,
+      "z": 13.1
+    },
+    "rotationY": 0,
+    "info": {
+      "title": "Môi đỏ Má hồng",
+      "poem": "",
+      "description": "Tác phẩm thể hiện gương mặt một cô gái hiện đại với phong cách trang điểm mạnh có đôi mắt cụp xuống như đang nhìn lại về thế giới nội tâm của mình thể hiện con người hướng nội nhưng vẫn đầy quyến rũ và cá tính. Thông điệp của tác phẩm là: Mỗi cô gái dù là hướng nội hay hướng ngoại đều là những bông hoa trong vườn hoa nhiều màu sắc của thế giới này.",
+      "year": "2023",
+      "paintingID": 24,
+      "material": "Ceramic",
+      "size": "40cm"
+    }
+  },
+  {
+    "imgSrc": "./artwork/artwork26.png",
+    "width": 3,
+    "height": 4,
+    "position": {
+      "x": -6.125,
+      "y": 5,
+      "z": 13.1
+    },
+    "rotationY": 0,
+    "info": {
+      "title": "Cô gái hiện đại",
+      "poem": "",
+      "description": "Chân dung một cô gái hiện đại được thể hiện trên bình gốm nhằm truyền tải thông điệp về sự phá cách, đề cao cá tính mỗi cá nhân trong xã hội hiện đại ngày nay.Cô gái với gu trang điểm lạ mắt ấn tượng như muốn thể hiện với thế giới về một cái Tôi đầy cá tính riêng của mình.",
+      "year": "2023",
+      "paintingID": 24,
+      "material": "Ceramic",
+      "size": "40cm"
     }
   }
 ]

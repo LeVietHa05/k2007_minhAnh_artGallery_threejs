@@ -5,10 +5,13 @@ export function displayPaintingInfo(info) {
     const infoDiv = document.querySelector("#painting_info");
     // Set the innerHTML of the div element to the painting info
     infoDiv.innerHTML = `
-        <h3>${info.title}</h3>
-        <p>Artist: ${info.artist}</p>
-        <p>Description: ${info.description}</p>
+        <h3 style="font-size: 40px;" class="dancing-script">${info.title}</h3>
+        <p><i>'${info.poem}'</i></p><br>
+        <p>${info.description}</p>
+        <hr width='20%'>
         <p>Year: ${info.year}</p>
+        <p>${info.material}</p>
+        <p>${info.size}</p>
     `;
     // Add the active class to the div element to display it
     infoDiv.classList.add("show");
