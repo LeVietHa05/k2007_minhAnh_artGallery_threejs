@@ -55,11 +55,28 @@ export async function createPaintings(scene) {
                 outlineGroup.add(topOutline, bottomOutline, leftOutline, rightOutline);
                 outlineGroup.visible = false;
 
+                if (data.rotationY == 1.570796326794896 || data.rotationY == -1.570796326794896) {
+                    console.log('rotated')
+                    topOutline.rotateY(1.570796326794896);
+                    bottomOutline.rotateY(1.570796326794896);
+                    leftOutline.rotateY(1.570796326794896);
+                    rightOutline.rotateY(THREE.MathUtils.degToRad(90));
+                    leftOutline.position.z -= data.width / 2;
+                    rightOutline.position.z += data.width / 2;
+                    if (data.rotationY == -1.570796326794896) {
+                        leftOutline.position.x += data.width / 2;
+                        rightOutline.position.x -= data.width / 2 + 0.01;
+                    } else {
+                        rightOutline.position.x -= data.width / 2;
+                        leftOutline.position.x += data.width / 2 + 0.01;
+                    }
+                }
+
                 const paintingTexture = new THREE.TextureLoader().load(data.imgSrc);
                 paintingTexture.colorSpace = THREE.SRGBColorSpace;
                 const painting = new THREE.Mesh(
                     new THREE.PlaneGeometry(data.width, data.height),
-                    new THREE.MeshBasicMaterial({ map:  paintingTexture})
+                    new THREE.MeshBasicMaterial({ map: paintingTexture })
                 );
 
                 painting.position.set(data.position.x, data.position.y, data.position.z);
