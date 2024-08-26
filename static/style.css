@@ -440,6 +440,11 @@ canvas {
   background-color: rgba(52, 58, 125, 0.8);
 }
 
+#popup {
+  font-size: 1.5em;
+  background-color: rgba(0,0,0,0.3);
+}
+
 .qwitcher-grypen-regular {
   font-family: "Qwitcher Grypen", cursive;
   font-weight: 400;

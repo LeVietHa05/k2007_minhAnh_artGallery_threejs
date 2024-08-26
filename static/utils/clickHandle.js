@@ -62,8 +62,6 @@ export function clickHandle(renderer, camera, paintings, frames) {
             isClickedPainting = false;
             // hidePaintingInfo();
         }
-
-
     }, false);
 }
 

@@ -29,6 +29,14 @@ function onKeyDown(e) {
         // if (controls.isLocked)
         controls.unlock();
     }
+
+    if (e.key === "e") {
+        console.log("e");
+        let popup = document.getElementById("popup");
+        if (popup) {
+            popup.style.display === "none" ? popup.style.display = "block" : popup.style.display = "none";
+        }
+    }
 }
 
 function onKeyUp(e) {

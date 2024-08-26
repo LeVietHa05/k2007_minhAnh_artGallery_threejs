@@ -27,6 +27,8 @@ export function setupScene() {
     renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
     controls = new PointerLockControls(camera, document.body);
+    //reduce the speed of the camera
+    controls.pointerSpeed = 0.3;
 
     // scene.add(controls.getObject()); // Add the controls to the scene
 
