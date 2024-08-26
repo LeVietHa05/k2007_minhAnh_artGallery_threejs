@@ -1,12 +1,13 @@
 [
   {
     "imgSrc": "./artwork/artwork1.png",
-    "width": 3,
-    "height": 4.5,
+    "width": 0.4,
+    "height": 0.6,
+    "depth": 0.05,
     "position": {
-      "x": 15,
-      "y": 5,
-      "z": 24.99
+      "x": 4.5,
+      "y": 1.5,
+      "z": 6.9
     },
     "rotationY": 3.141592653589793,
     "info": {

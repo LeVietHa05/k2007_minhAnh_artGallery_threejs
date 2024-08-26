@@ -12,7 +12,7 @@ export const keyPressed = {
 }
 
 export function updateMovement(delta, controls, camera, walls) {
-    const moveMent = 10 * delta;
+    const moveMent = 2 * delta;
 
     const previousPosition = camera.position.clone();
 

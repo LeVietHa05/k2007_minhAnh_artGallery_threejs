@@ -18,7 +18,7 @@ export function setupRendering(
     let render = function () {
         const delta = clock.getDelta();
         updateMovement(delta, controls, camera, walls);
-        nearCheck(camera, paintings,frames);
+        // nearCheck(camera, paintings,frames);
         if (isNearPainting || isClickedPainting || isHoverPainting) {
             displayPaintingInfo(paintingToShow.userData.info);
         } else {

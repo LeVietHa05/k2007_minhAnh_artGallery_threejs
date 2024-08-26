@@ -8,7 +8,7 @@ export function createCeiling(scene) {
         texture.repeat.set(10, 10);
     });
 
-    const planeGeometry = new THREE.PlaneGeometry(50, 50);
+    const planeGeometry = new THREE.PlaneGeometry(20,20);
     const planeMaterial = new THREE.MeshBasicMaterial({
         //not shiny texture for the ceiling
         map: ceilingTexture,
@@ -18,7 +18,7 @@ export function createCeiling(scene) {
     const ceiling = new THREE.Mesh(planeGeometry, planeMaterial);
 
     ceiling.rotation.x = Math.PI / 2;
-    ceiling.position.y = 10; //
+    ceiling.position.y = 3; //
 
     scene.add(ceiling);
 
