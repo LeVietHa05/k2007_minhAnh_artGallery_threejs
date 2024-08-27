@@ -1,4 +1,6 @@
 
+import * as THREE from 'three';
+
 import * as Scene from './utils/scene.js';
 import * as Wall from './utils/walls.js';
 import * as Floor from './utils/floor.js';
@@ -17,7 +19,7 @@ export let { camera, controls, renderer } = Scene.setupScene();
 (async function () {
     // setupAudio(camera);
 
-    const walls = Wall.createWalls(Scene.scene);
+    const {wallGroup, walls} = Wall.createWalls(Scene.scene);
 
     const floor = Floor.createFloor(Scene.scene);
 
@@ -29,7 +31,7 @@ export let { camera, controls, renderer } = Scene.setupScene();
 
     Lighting.setupLights(Scene.scene);
 
-    Bounding.createBoundingBoxes(walls)
+    Bounding.createBoundingBoxes(wallGroup)
 
     Bounding.createBoundingBoxes(paintings)
 

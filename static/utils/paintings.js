@@ -56,7 +56,7 @@ export async function createPaintings(scene) {
                 outlineGroup.visible = false;
 
                 if (data.rotationY == 1.570796326794896 || data.rotationY == -1.570796326794896) {
-                    console.log('rotated')
+                    // console.log('rotated')
                     topOutline.rotateY(1.570796326794896);
                     bottomOutline.rotateY(1.570796326794896);
                     leftOutline.rotateY(1.570796326794896);
@@ -74,9 +74,11 @@ export async function createPaintings(scene) {
 
                 const paintingTexture = new THREE.TextureLoader().load(data.imgSrc);
                 paintingTexture.colorSpace = THREE.SRGBColorSpace;
+                let normalMaterial = new THREE.MeshBasicMaterial({ color: 0x000 });
+                let materials = [normalMaterial, normalMaterial, normalMaterial, normalMaterial, new THREE.MeshBasicMaterial({ map: paintingTexture }), normalMaterial];
                 const painting = new THREE.Mesh(
-                    new THREE.PlaneGeometry(data.width, data.height),
-                    new THREE.MeshBasicMaterial({ map: paintingTexture })
+                    new THREE.BoxGeometry(data.width, data.height, data.depth),
+                    materials
                 );
 
                 painting.position.set(data.position.x, data.position.y, data.position.z);

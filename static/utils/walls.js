@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-
+let walls = [];
 
 //create a group of walls and return it (14m x 14m x 3m room)
 export function createWalls(scene) {
@@ -117,5 +117,7 @@ export function createWalls(scene) {
     wallGroup.add(middleWall_1, middleWall_2, middleWall_3, middleWall_4, middleWall_5, middleWall_6, middleWall_7, middleWall_8);
     wallGroup.position.y = 1.5;
 
-    return wallGroup;
+    walls.push(frontWall_1, frontWall_2, frontWall_3, frontWall_4, frontWall_5, leftWall, rightWall, backWall, middleWall_1, middleWall_2, middleWall_3, middleWall_4, middleWall_5, middleWall_6, middleWall_7, middleWall_8); 
+
+    return { wallGroup, walls };
 }
