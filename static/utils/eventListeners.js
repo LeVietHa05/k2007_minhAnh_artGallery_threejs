@@ -1,5 +1,6 @@
 import { keyPressed } from './movement.js';
 import { startAudio, stopAudio } from './audioGuide.js';
+import { hidePaintingInfo } from './paintingInfo.js';
 
 import { controls } from '../../main.js';
 
@@ -50,6 +51,14 @@ function onKeyUp(e) {
             controls.unlock();
         else
             controls.lock();
+    }
+    if (e.key === "v") {
+        document.addEventListener("mousedown", (e) => {
+            controls.lock();
+        })
+        document.addEventListener("mouseup", (e) => {
+            controls.unlock();
+        })
     }
     // if (e.key === "Escape") {
     //     showMenu();

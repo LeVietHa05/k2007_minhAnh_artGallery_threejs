@@ -64,10 +64,10 @@ img {
 }
 
 #instruction_text {
-  display: none;
+  /* display: none; */
 }
-#show_intruction{
-  cursor: pointer ;
+#show_intruction {
+  cursor: pointer;
   position: absolute;
   top: -20px;
   left: -20px;
@@ -75,7 +75,7 @@ img {
   font-size: 30px;
 }
 
-.show {
+.show1 {
   display: block !important;
 }
 
@@ -281,26 +281,30 @@ canvas {
 
 #painting_info {
   position: fixed;
-  top: 20px;
-  left: 20px;
+  top: 40px;
+  left: 40px;
+  bottom: 40px;
+  right: 40px;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 20px;
   border-radius: 10px;
   font-family: "Arial", sans-serif;
   font-size: 1vh;
   color: #fff;
-  width: 20vw;
+  /* width: 20vw; */
   min-width: 300px;
   /* height: 150px; */
   z-index: 1;
   transition: all 0.3s ease-in-out;
   transform: translateY(100px);
-  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: row;
 }
 
 #painting_info.show {
   transform: translateY(0);
-  opacity: 1;
+  visibility: visible;
 }
 
 #painting_info h3 {
@@ -442,7 +446,26 @@ canvas {
 
 #popup {
   font-size: 1.5em;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.imgInfo {
+  /* position: fixed;
+  top: 50%;
+  left: 50%; */
+  /* width: 60%; */
+  /* max-height: 90vh; */
+  /* transform: translate(-50%, -50%); */
+  margin: auto;
+}
+.imgInfo>img {
+  min-height: 600px;
+  max-height: 90vh;
+}
+
+.rotateOnHover:hover {
+  transform: rotate(180deg);
+  color: red;
 }
 
 .qwitcher-grypen-regular {

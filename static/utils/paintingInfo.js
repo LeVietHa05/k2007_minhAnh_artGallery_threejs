@@ -1,18 +1,24 @@
 
 // Function to display painting info when the user clicks on/look at/or near a painting
-export function displayPaintingInfo(info) {
+export function displayPaintingInfo(data) {
     // Get the div element where the painting info will be displayed
     const infoDiv = document.querySelector("#painting_info");
-    // Set the innerHTML of the div element to the painting info
-    infoDiv.innerHTML = `
-        <h3 style="font-size: 40px;" class="dancing-script">${info.title}</h3>
-        <p><i>'${info.poem}'</i></p><br>
-        <p>${info.description}</p>
-        <hr width='20%'>
-        <p>Year: ${info.year}</p>
-        <p>${info.material}</p>
-        <p>${info.size}</p>
-    `;
+    //change the content of the div element to the painting info
+    document.querySelector("#painting_title").textContent = data.info.title;
+    document.querySelector("#painting_poem").innerHTML = `"${data.info.poem}"`;
+    document.querySelector("#painting_description").innerHTML = data.info.description;
+    document.querySelector("#painting_year").textContent = data.info.year;
+    document.querySelector("#painting_material").textContent = data.info.material;
+    document.querySelector("#painting_size").textContent = data.info.size;
+    document.querySelector("#paintingID").value = data.info.paintingID;
+    document.querySelector("#painting_link").src = data.link;
+    document.querySelector("#painting_price").value = data.info.price;
+
+    document.querySelector("#painting_title").textContent = data.info.title_en;
+    document.querySelector("#painting_poem").innerHTML = `"${data.info.poem_en}"`;
+    document.querySelector("#painting_description").innerHTML = data.info.description_en;
+
+
     // Add the active class to the div element to display it
     infoDiv.classList.add("show");
 }

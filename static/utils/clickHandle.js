@@ -7,6 +7,7 @@ export let isNearPainting = false;
 export let isClickedPainting = false;
 export let isHoverPainting = false;
 export let paintingToShow = null;
+export let isControlEnabled = true;
 
 let lastPainting = -1;
 
@@ -20,16 +21,43 @@ document.querySelector('#edit_button').addEventListener('click', (e) => {
     e.target.textContent = isEdit ? 'Done' : 'Edit';
 })
 
-document.querySelector("#show_intruction").addEventListener('click', (e) => {
-    if (document.querySelector("#instruction_text").classList.contains("show")) {
-        document.querySelector("#instruction_text").classList.remove("show");
-    } else {
-        document.querySelector("#instruction_text").classList.add("show");
+document.querySelector("#painting_info").addEventListener('click', (e) => {
+    if (e.target.id == "close_painting_info" || e.target.id == "painting_info") {
+        hidePaintingInfo();
+        isClickedPainting = false;
+        isNearPainting = false;
+        isHoverPainting = false;
     }
+})
+
+document.querySelectorAll("input").forEach(input => {
+    console.log(input);
+    input.addEventListener('focus', (e) => {    
+        console.log("focus");
+        isControlEnabled = false;
+    })
+    input.addEventListener('blur', (e) => {
+        console.log("blur");
+        isControlEnabled = true;
+    })
+})
+
+document.querySelector("#show_intruction").addEventListener('click', (e) => {
+    if (document.querySelector("#instruction_text").style.display == "block") {
+        document.querySelector("#instruction_text").style.display = "none";
+    }
+    else {
+        document.querySelector("#instruction_text").style.display = "block";
+    }
+
 })
 
 export function clickHandle(renderer, camera, paintings, frames) {
     renderer.domElement.addEventListener('mousedown', (e) => {
+        console.log("click handle");
+        // e.preventDefault();
+        // e.stopPropagation();
+        if (e.target != renderer.domElement) return;
         //normalize mouse position because it is not in the same scale as the camera
         mouse.x = (e.clientX / window.innerWidth) * 2 - 1;
         mouse.y = -(e.clientY / window.innerHeight) * 2 + 1;
@@ -67,7 +95,7 @@ export function clickHandle(renderer, camera, paintings, frames) {
 
 export function nearCheck(camera, paintings, frames) {
     if (!isEdit) {
-        const distanceThreshold = 5.5;
+        const distanceThreshold = 1.5;
         let painting = paintings.find(painting => {
             return camera.position.distanceTo(painting.position) < distanceThreshold;
         })

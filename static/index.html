@@ -30,7 +30,7 @@
 </head>
 
 <body>
-    <div class="background_menu">
+    <div class="background_menu" style="z-index: 10;">
         <div id="menu">
             <div class="img_container" id="">
                 <img src="./img/banner.png" alt="dong lua" id="">
@@ -72,7 +72,7 @@
         <span class="material-symbols-outlined" id="show_intruction">
             help
         </span>
-        <div class="plr-1em" id="instruction_text">
+        <div class="plr-1em" id="instruction_text" style="display: block;">
             <p>Hướng dẫn / Intruction</p>
             <p>Nhấn phím mũi tên hoặc WASD để di chuyển / Use
                 <span class="material-symbols-outlined" style="float: center;">
@@ -85,7 +85,7 @@
             <p>Bấm F để hiện/ẩn chuột / Press F to hide/unhide the mouse</p>
         </div>
     </div>
-    <div class="modal " tabindex="-1" id="popup" >
+    <div class="modal " tabindex="-1" id="popup">
         <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
@@ -102,7 +102,86 @@
             </div>
         </div>
     </div>
-    <div id="painting_info"></div>
+    <div id="painting_info">
+        <div style="width:20%; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+                <h3 style="font-size: 40px;" class="dancing-script" id="painting_title"></h3>
+                <p><i id="painting_poem"></i></p><br>
+                <p id="painting_description"></p>
+                <hr>
+                <p>Year: <i id="painting_year"></i></p>
+                <p id="painting_material"></p>
+                <p id="painting_size"></p>
+            </div>
+            <div>
+                <legend style="font-size: 40px">Nếu bạn có hứng thú với bức tranh</legend>
+                <form action="/" method="post" id="purchare_form">
+                    <div class="mb-3">
+                        <label for="person_name" class="form-label">Tên - Your Name: </label>
+                        <input type="text" class="form-control" name="person_name" id="person_name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phoneNum" class="form-label">Số điện thoại - Your Phone Number: </label>
+                        <input type="number" class="form-control" name="phoneNum" id="phoneNum" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email_address" class="form-label">Địa chỉ Email</label>
+                        <input type="email" class="form-control" id="email_address" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="painting_price" class="col-sm-8 col-form-label">Giá khởi điểm: </label>
+                        <div class="col-sm-4 ">
+                            <input type="text" readonly class="form-control-plaintext text-light" id="painting_price"
+                                value="123">
+                        </div>
+                    </div>
+                    <input type="text" hidden value="" id="paintingID">
+                    <button type="submit" class="btn btn-primary" style="font-size: 1.4em">Đặt Mua - Purchare</button>
+                </form>
+            </div>
+        </div>
+        <div class="imgInfo">
+            <img src="" alt="" style="height:100%" id="painting_link">
+            <span class="material-symbols-outlined rotateOnHover" id="close_painting_info"
+                style="position: absolute; top: 12px; right: 12px; padding: 12px; font-size: 2em; cursor: pointer; transition:all 0.5s ease-in-out;">
+                close
+            </span>
+        </div>
+        <div style="width:20%; display: flex; justify-content: flex-end; flex-direction: column; text-align:right">
+            <h3 style="font-size: 40px;" class="dancing-script" id="painting_title_en">english version</h3>
+            <p><i id="painting_poem_en"></i></p><br>
+            <p id="painting_description_en"></p>
+            <hr>
+            <p>Year: <i id="painting_year"></i></p>
+            <p id="painting_material"></p>
+            <p id="painting_size"></p>
+        </div>
+    </div>
+    <script>
+        let purchare_btn = document.querySelector('#purchare_form button');
+        purchare_btn.addEventListener("click", (e) => {
+            e.preventDefault();
+            let name = document.querySelector('#person_name').value;
+            let phone = document.querySelector('#phoneNum').value;
+            let email = document.querySelector('#email_address').value;
+            console.log(name, phone, email);
+            fetch("/", {
+                method: "POST",
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: name,
+                    phone: phone,
+                    email: email
+                })
+            })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                })
+        })
+    </script>
     <script type="module" src="./main.js"></script>
 </body>
 

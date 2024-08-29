@@ -88,7 +88,7 @@ export async function createPaintings(scene) {
                 painting.userData = {
                     info: data.info,
                     type: 'painting',
-                    link: "https://www.google.com"
+                    link: data.imgSrc
                 }
 
                 paintings.castShadow = true;
