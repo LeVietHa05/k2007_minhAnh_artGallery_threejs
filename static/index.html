@@ -42,19 +42,19 @@
                     </div>
 
                 </div>
-                <h1 class="roboto-bold" style="margin-bottom: 0;">english version</h1>
+                <!-- <h1 class="roboto-bold" style="margin-bottom: 0;">english version</h1> -->
                 <div>
-                    <div class="qwitcher-grypen-regular" style="font-size: 50px;">english version
-                    </div>
-                    <hr width="70%">
-                    <p>Through the paintings of Vũ Minh Anh</p>
+                    <!-- <div class="qwitcher-grypen-regular" style="font-size: 50px;">english version -->
                 </div>
+                <!-- <hr width="70%"> -->
+                <p>Through the paintings of Vũ Minh Anh</p>
+            </div>
 
-                <div id="play_button" style="font-size: 1.5em;">
-                    <p style="margin-bottom: 0;">Tham quan triển lãm / Enter the Gallery</p>
-                </div>
+            <div id="play_button" style="font-size: 1.5em;">
+                <p style="margin-bottom: 0;">Tham quan triển lãm / Enter the Gallery</p>
             </div>
         </div>
+    </div>
     </div>
     <!-- <div class="audio-control">
         <button id="start-audio">Start Audio Guide</button>
@@ -114,7 +114,7 @@
                 <p id="painting_size"></p>
                 <p>Mã Tranh: <i id="paintingID"></i></p>
             </div>
-            <div>
+            <div id="purchare_form_div">
                 <legend style="font-size: 30px">Nếu bạn có hứng thú với bức tranh</legend>
                 <form action="/" method="post" id="purchare_form">
                     <div class="row g-3 mb-3">
@@ -152,14 +152,15 @@
                 </form>
             </div>
         </div>
-        <div class="imgInfo">
+        <div class="imgInfo plr-1em">
             <img src="" alt="" style="height:100%" id="painting_link">
             <span class="material-symbols-outlined rotateOnHover" id="close_painting_info"
                 style="position: absolute; top: 12px; right: 12px; padding: 12px; font-size: 2em; cursor: pointer; transition:all 0.5s ease-in-out;">
                 close
             </span>
         </div>
-        <div style="width:20%; display: flex; justify-content: flex-end; flex-direction: column; text-align:right">
+
+        <!-- <div style="width:20%; display: flex; justify-content: flex-end; flex-direction: column; text-align:right">
             <h3 style="font-size: 40px;" class="dancing-script" id="painting_title_en">english version</h3>
             <p><i id="painting_poem_en"></i></p><br>
             <p id="painting_description_en"></p>
@@ -167,7 +168,7 @@
             <p>Year: <i id="painting_year"></i></p>
             <p id="painting_material"></p>
             <p id="painting_size"></p>
-        </div>
+        </div> -->
     </div>
     <script>
         let purchare_btn = document.querySelector('#purchare_form button');

@@ -10,14 +10,18 @@ export function displayPaintingInfo(data) {
     document.querySelector("#painting_year").textContent = data.info.year;
     document.querySelector("#painting_material").textContent = data.info.material;
     document.querySelector("#painting_size").textContent = data.info.size;
-    document.querySelector("#paintingID").textContent = data.info.paintingID + 1;
     document.querySelector("#painting_link").src = data.link;
+    document.querySelector("#paintingID").textContent = data.info.paintingID + 1;
     document.querySelector("#painting_price").value = `${data.info.price} VND`;
     document.querySelector("#price").value = data.info.value;
     document.querySelector("#price").step = 100000;
     document.querySelector("#price").min = data.info.price;
     
-
+    if (!data.info.isBuyAble) {
+        document.querySelector("#purchare_form_div").style.display = "none";
+    } else {
+        document.querySelector("#purchare_form_div").style.display = "block";
+    }
     // document.querySelector("#painting_title").textContent = data.info.title_en;
     // document.querySelector("#painting_poem").innerHTML = `"${data.info.poem_en}"`;
     // document.querySelector("#painting_description").innerHTML = data.info.description_en;
