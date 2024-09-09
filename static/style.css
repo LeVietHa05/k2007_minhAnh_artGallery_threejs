@@ -289,7 +289,7 @@ canvas {
   padding: 20px;
   border-radius: 10px;
   font-family: "Arial", sans-serif;
-  font-size: 1vh;
+  font-size: 1.2vh;
   color: #fff;
   /* width: 20vw; */
   min-width: 300px;
@@ -461,6 +461,10 @@ canvas {
 .imgInfo>img {
   min-height: 600px;
   max-height: 90vh;
+}
+
+.form-control {
+  font-size: 1.2vh;
 }
 
 .rotateOnHover:hover {

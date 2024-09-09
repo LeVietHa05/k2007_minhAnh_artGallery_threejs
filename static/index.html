@@ -112,30 +112,42 @@
                 <p>Year: <i id="painting_year"></i></p>
                 <p id="painting_material"></p>
                 <p id="painting_size"></p>
+                <p>Mã Tranh: <i id="paintingID"></i></p>
             </div>
             <div>
-                <legend style="font-size: 40px">Nếu bạn có hứng thú với bức tranh</legend>
+                <legend style="font-size: 30px">Nếu bạn có hứng thú với bức tranh</legend>
                 <form action="/" method="post" id="purchare_form">
-                    <div class="mb-3">
+                    <div class="row g-3 mb-3">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Tên - Name" aria-label="Tên"
+                                name="person_name" id="person_name" required>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Số điện thoại - Phone number"
+                                aria-label="số điện thoại" name="phoneNum" id="phoneNum" required>
+                        </div>
+                    </div>
+                    <!-- <div class="mb-3">
                         <label for="person_name" class="form-label">Tên - Your Name: </label>
                         <input type="text" class="form-control" name="person_name" id="person_name" required>
                     </div>
                     <div class="mb-3">
                         <label for="phoneNum" class="form-label">Số điện thoại - Your Phone Number: </label>
                         <input type="number" class="form-control" name="phoneNum" id="phoneNum" required>
-                    </div>
+                    </div> -->
                     <div class="mb-3">
-                        <label for="email_address" class="form-label">Địa chỉ Email</label>
-                        <input type="email" class="form-control" id="email_address" placeholder="name@example.com">
+                        <input type="email" class="form-control" id="email_address" placeholder="Địa chỉ Email">
                     </div>
                     <div class="mb-3 row">
-                        <label for="painting_price" class="col-sm-8 col-form-label">Giá khởi điểm: </label>
-                        <div class="col-sm-4 ">
+                        <label for="painting_price" class="col-sm-6 col-form-label">Giá khởi điểm: </label>
+                        <div class="col-sm-6 ">
                             <input type="text" readonly class="form-control-plaintext text-light" id="painting_price"
                                 value="123">
                         </div>
                     </div>
-                    <input type="text" hidden value="" id="paintingID">
+                    <div class="mb-3">
+                        <input type="number" class="form-control" id="price" value="1500000" step="100000">
+                    </div>
                     <button type="submit" class="btn btn-primary" style="font-size: 1.4em">Đặt Mua - Purchare</button>
                 </form>
             </div>
@@ -161,24 +173,22 @@
         let purchare_btn = document.querySelector('#purchare_form button');
         purchare_btn.addEventListener("click", (e) => {
             e.preventDefault();
-            let name = document.querySelector('#person_name').value;
-            let phone = document.querySelector('#phoneNum').value;
-            let email = document.querySelector('#email_address').value;
-            console.log(name, phone, email);
             fetch("/", {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-                    name: name,
-                    phone: phone,
-                    email: email
+                    name: document.querySelector('#person_name').value,
+                    phone: document.querySelector('#phoneNum').value,
+                    email: document.querySelector('#email_address').value,
+                    paintingID: document.querySelector('#paintingID').textContent,
+                    price: document.querySelector('#price').value
                 })
             })
                 .then(res => res.json())
                 .then(data => {
-                    console.log(data);
+                    alert(data.mess);
                 })
         })
     </script>
