@@ -72,30 +72,41 @@ export async function createPaintings(scene) {
                     }
                 }
 
-                const paintingTexture = new THREE.TextureLoader().load(data.imgSrc);
-                paintingTexture.colorSpace = THREE.SRGBColorSpace;
-                let normalMaterial = new THREE.MeshBasicMaterial({ color: 0x000 });
-                let materials = [normalMaterial, normalMaterial, normalMaterial, normalMaterial, new THREE.MeshBasicMaterial({ map: paintingTexture }), normalMaterial];
-                const painting = new THREE.Mesh(
-                    new THREE.BoxGeometry(data.width, data.height, data.depth),
-                    materials
-                );
+                new THREE.ImageBitmapLoader().load(data.imgSrc, function (imageBitmap) {
+                    const texture = new THREE.CanvasTexture(imageBitmap);
+                    texture.colorSpace = THREE.SRGBColorSpace;
+                    const paintingMaterial = new THREE.MeshBasicMaterial({ map: texture });
 
-                painting.position.set(data.position.x, data.position.y, data.position.z);
-                painting.rotation.y = data.rotationY;
+                    // const paintingTexture = new THREE.TextureLoader().load(data.imgSrc);
+                    // paintingTexture.colorSpace = THREE.SRGBColorSpace;
+                    let normalMaterial = new THREE.MeshBasicMaterial({ color: 0x000 });
+                    let materials = [normalMaterial, normalMaterial, normalMaterial, normalMaterial, paintingMaterial, normalMaterial];
+                    const painting = new THREE.Mesh(
+                        new THREE.BoxGeometry(data.width, data.height, data.depth),
+                        materials
+                    );
 
-                //to show the painting info when look later
-                painting.userData = {
-                    info: data.info,
-                    type: 'painting',
-                    link: data.imgSrc
-                }
+                    painting.position.set(data.position.x, data.position.y, data.position.z);
+                    painting.rotation.y = data.rotationY;
+                    painting.rotation.z = -Math.PI
+                    //mirror the painting
+                    painting.scale.x = -1;
 
-                paintings.castShadow = true;
-                paintings.receiveShadow = true;
-                scene.add(painting, outlineGroup);
-                paintings.push(painting);
-                frames.push(outlineGroup);
+                    //to show the painting info when look later
+                    painting.userData = {
+                        info: data.info,
+                        type: 'painting',
+                        link: data.imgSrc
+                    }
+
+                    paintings.castShadow = true;
+                    paintings.receiveShadow = true;
+                    scene.add(painting, outlineGroup);
+                    paintings.push(painting);
+                    frames.push(outlineGroup);
+                }, undefined, function (error) {
+                    console.error('An error happened.', error);
+                });
             })
         })
     return { paintings, frames };

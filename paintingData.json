@@ -599,8 +599,8 @@
   },
   {
     "imgSrc": "./artwork/artwork27.png",
-    "width": 0.8,
-    "height": 1,
+    "width": 1,
+    "height": 1.4,
     "depth": 0.05,
     "position": {
       "x": 6.95,
@@ -615,7 +615,7 @@
       "year": "2023",
       "paintingID": 26,
       "material": "Acylic trên toan",
-      "size": "40x50cm",
+      "size": "50x70cm",
       "price": "1500000",
       "isBuyAble": true
     }
