@@ -285,7 +285,7 @@ canvas {
   left: 40px;
   bottom: 40px;
   right: 40px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.9);
   padding: 20px;
   border-radius: 10px;
   font-family: "Arial", sans-serif;
@@ -311,7 +311,7 @@ canvas {
   margin: 0 0 10px 0;
   font-size: 2em;
   font-weight: bold;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 #painting_info p {
@@ -458,7 +458,7 @@ canvas {
   /* transform: translate(-50%, -50%); */
   margin: auto;
 }
-.imgInfo>img {
+.imgInfo > img {
   min-height: 600px;
   max-height: 90vh;
 }
@@ -558,6 +558,13 @@ canvas {
 
 .dancing-script {
   font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.playwrite-cu {
+  font-family: "Playwrite CU", cursive;
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;

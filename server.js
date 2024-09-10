@@ -27,7 +27,8 @@ app.post("/", async (req, res, next) => {
     let paintingData = fs.readFileSync('./paintingData.json');
     paintingData = JSON.parse(paintingData);
     let painting = paintingData[req.body.paintingID - 1];
-
+    paintingData[req.body.paintingID - 1].info.isBought = false;
+    fs.writeFileSync('./paintingData.json', JSON.stringify(paintingData));
     var content = '';
     content += `
     <div style="padding: 10px; background-color: #003375">

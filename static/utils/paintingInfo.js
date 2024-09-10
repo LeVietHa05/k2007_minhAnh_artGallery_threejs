@@ -16,11 +16,19 @@ export function displayPaintingInfo(data) {
     document.querySelector("#price").value = data.info.value;
     document.querySelector("#price").step = 100000;
     document.querySelector("#price").min = data.info.price;
-    
+
     if (!data.info.isBuyAble) {
+        document.querySelector('#isSold').style.display = "none";
         document.querySelector("#purchare_form_div").style.display = "none";
     } else {
         document.querySelector("#purchare_form_div").style.display = "block";
+        if (data.info.isBought) {
+            document.querySelector("#purchare_form button").disabled = true;
+            document.querySelector('#isSold').style.display = "block";
+        } else {
+            document.querySelector('#isSold').style.display = "none";
+            document.querySelector("#purchare_form button").disabled = false;
+        }
     }
     // document.querySelector("#painting_title").textContent = data.info.title_en;
     // document.querySelector("#painting_poem").innerHTML = `"${data.info.poem_en}"`;

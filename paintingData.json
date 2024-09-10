@@ -4,11 +4,7 @@
     "width": 2.5,
     "height": 1.5,
     "depth": 0.05,
-    "position": {
-      "x": 0,
-      "y": 1.3,
-      "z": 9.54
-    },
+    "position": { "x": 0, "y": 1.3, "z": 9.54 },
     "rotationY": 3.141592653589793,
     "info": {
       "title": "Tác giả: Vũ Minh Anh (Nữ)",
@@ -19,7 +15,8 @@
       "material": "Nơi sinh: Hà Nội",
       "size": "",
       "price": "",
-      "isBuyAble": false
+      "isBuyAble": false,
+      "isBought": false
     }
   },
   {
@@ -27,11 +24,7 @@
     "width": 0.8,
     "height": 1.2,
     "depth": 0.05,
-    "position": {
-      "x": -4.45,
-      "y": 1.3,
-      "z": 6.95
-    },
+    "position": { "x": -4.45, "y": 1.3, "z": 6.95 },
     "rotationY": 3.141592653589793,
     "info": {
       "title": "Lòng mẹ",
@@ -41,8 +34,9 @@
       "paintingID": 1,
       "material": "Acylic trên toan",
       "size": "40x60cm",
-      "price": "1500000",
-      "isBuyAble": true
+      "price": "500000",
+      "isBuyAble": true,
+      "isBought": true
     }
   },
   {
@@ -50,11 +44,7 @@
     "width": 0.8,
     "height": 1.2,
     "depth": 0.05,
-    "position": {
-      "x": -6.95,
-      "y": 1.3,
-      "z": 5
-    },
+    "position": { "x": -6.95, "y": 1.3, "z": 5 },
     "rotationY": 1.570796326794896,
     "info": {
       "title": "Duyên Trầu - Cau",
@@ -64,8 +54,9 @@
       "paintingID": 2,
       "material": "Acylic trên toan",
       "size": "40x60cm",
-      "price": "1500000",
-      "isBuyAble": true
+      "price": "5000000",
+      "isBuyAble": true,
+      "isBought": false
     }
   },
   {
@@ -73,11 +64,7 @@
     "width": 0.8,
     "height": 1.2,
     "depth": 0.05,
-    "position": {
-      "x": -6.95,
-      "y": 1.3,
-      "z": 1.5
-    },
+    "position": { "x": -6.95, "y": 1.3, "z": 1.5 },
     "rotationY": 1.570796326794896,
     "info": {
       "title": "Duyên",
@@ -87,8 +74,9 @@
       "paintingID": 3,
       "material": "Acylic trên toan",
       "size": "40x60cm",
-      "price": "1500000",
-      "isBuyAble": true
+      "price": "4000000",
+      "isBuyAble": true,
+      "isBought": false
     }
   },
   {
@@ -96,11 +84,7 @@
     "width": 0.8,
     "height": 1.2,
     "depth": 0.05,
-    "position": {
-      "x": -6.95,
-      "y": 1.3,
-      "z": -1.5
-    },
+    "position": { "x": -6.95, "y": 1.3, "z": -1.5 },
     "rotationY": 1.570796326794896,
     "info": {
       "title": "Nét xưa",
@@ -110,8 +94,9 @@
       "paintingID": 4,
       "material": "Acylic trên toan",
       "size": "40x60cm",
-      "price": "1500000",
-      "isBuyAble": true
+      "price": "4000000",
+      "isBuyAble": true,
+      "isBought": false
     }
   },
   {
@@ -119,11 +104,7 @@
     "width": 0.8,
     "height": 1.2,
     "depth": 0.05,
-    "position": {
-      "x": -6.95,
-      "y": 1.3,
-      "z": -5
-    },
+    "position": { "x": -6.95, "y": 1.3, "z": -5 },
     "rotationY": 1.570796326794896,
     "info": {
       "title": "Lòng Mẹ",
@@ -133,8 +114,9 @@
       "paintingID": 5,
       "material": "Acylic trên toan",
       "size": "40x60cm",
-      "price": "1500000",
-      "isBuyAble": true
+      "price": "5000000",
+      "isBuyAble": true,
+      "isBought": false
     }
   },
   {
@@ -142,11 +124,7 @@
     "width": 0.8,
     "height": 1.2,
     "depth": 0.05,
-    "position": {
-      "x": -5,
-      "y": 1.3,
-      "z": -6.95
-    },
+    "position": { "x": -5, "y": 1.3, "z": -6.95 },
     "rotationY": 0,
     "info": {
       "title": "Suy tư",
@@ -156,8 +134,9 @@
       "paintingID": 6,
       "material": "Acylic trên toan",
       "size": "40x60cm",
-      "price": "1500000",
-      "isBuyAble": true
+      "price": "4000000",
+      "isBuyAble": true,
+      "isBought": false
     }
   },
   {
@@ -165,11 +144,7 @@
     "width": 0.8,
     "height": 1,
     "depth": 0.05,
-    "position": {
-      "x": -3,
-      "y": 1.3,
-      "z": -6.95
-    },
+    "position": { "x": -3, "y": 1.3, "z": -6.95 },
     "rotationY": 0,
     "info": {
       "title": "Mẹ trong tôi",
@@ -179,8 +154,9 @@
       "paintingID": 7,
       "material": "Acylic trên toan",
       "size": "40x50cm",
-      "price": "1500000",
-      "isBuyAble": true
+      "price": "3000000",
+      "isBuyAble": true,
+      "isBought": false
     }
   },
   {
@@ -188,11 +164,7 @@
     "width": 0.8,
     "height": 1,
     "depth": 0.05,
-    "position": {
-      "x": -4,
-      "y": 1.3,
-      "z": 3
-    },
+    "position": { "x": -4, "y": 1.3, "z": 3 },
     "rotationY": -1.570796326794896,
     "info": {
       "title": "Ngóng trông",
@@ -202,8 +174,9 @@
       "paintingID": 8,
       "material": "Gốm",
       "size": "40x50cm",
-      "price": "1500000",
-      "isBuyAble": true
+      "price": "3000000",
+      "isBuyAble": true,
+      "isBought": false
     }
   },
   {
@@ -211,11 +184,7 @@
     "width": 0.6,
     "height": 0.8,
     "depth": 0.05,
-    "position": {
-      "x": -4,
-      "y": 1.3,
-      "z": 0
-    },
+    "position": { "x": -4, "y": 1.3, "z": 0 },
     "rotationY": -1.570796326794896,
     "info": {
       "title": "Hoa mùa hè",
@@ -225,8 +194,9 @@
       "paintingID": 6,
       "material": "Acylic trên toan",
       "size": "30x40cm",
-      "price": "1500000",
-      "isBuyAble": true
+      "price": "3000000",
+      "isBuyAble": true,
+      "isBought": false
     }
   },
   {
@@ -234,22 +204,19 @@
     "width": 0.6,
     "height": 0.8,
     "depth": 0.05,
-    "position": {
-      "x": -4,
-      "y": 1.3,
-      "z": -3
-    },
+    "position": { "x": -4, "y": 1.3, "z": -3 },
     "rotationY": -1.570796326794896,
     "info": {
-      "title": "Giấc mơ trưa",
+      "title": "Giấc mơ trưa",
       "poem": "",
       "description": "Buổi trưa cô gái đang mơ màng với những giấc mơ ngắn của mình. Bố cục được thể hiện theo chiều đứng như giấc ngủ vội vàng thường nhật của cô gái. Gương mặt cô gái thư thái, nhẹ nhõm và trong giấc mơ của mình vẫn có những hình ảnh rất đời thường như Ly trà sữa và những bông hoa nhỏ. <br> Trong giấc ngủ chưa nhưng hình ảnh cô gái vẫn vô cùng quyến rũ với gương mặt bầu bĩnh và chiếc cổ dài kiêu sa.  ",
       "year": "2023",
       "paintingID": 10,
       "material": "Acylic trên toan",
       "size": "30x40cm",
-      "price": "1500000",
-      "isBuyAble": true
+      "price": "4000000",
+      "isBuyAble": true,
+      "isBought": false
     }
   },
   {
@@ -257,22 +224,19 @@
     "width": 0.6,
     "height": 0.8,
     "depth": 0.05,
-    "position": {
-      "x": -3,
-      "y": 1.3,
-      "z": -4
-    },
+    "position": { "x": -3, "y": 1.3, "z": -4 },
     "rotationY": 3.141592653589793,
     "info": {
-      "title": "Cô gái nhút nhát",
+      "title": "Cô gái nhút nhát",
       "poem": "",
       "description": "Thiếu nữ đang che giấu gương mặt của mình dưới một chùm hoa rực rỡ. Cô gái e thẹn bởi chất nữ tính của mình nhưng vẫn đang ngầm khoe vẻ đẹp kiều diễm như những bông hoa đang nở rộ. Bàn tay cầm bông hoa đưa lên phía trước ngụ ý rằng người con gái này cho dù có e lệ, nhút nhát, che đậy vẻ bên ngoài của mình thì cô ấy vẫn luôn đẹp như đóa hoa kia.<br> Vậy Người đàn ông nào đủ tinh ý để nhận ra điều này? ",
       "year": "2022",
       "paintingID": 11,
       "material": "Acylic trên toan",
       "size": "30x40cm",
-      "price": "1500000",
-      "isBuyAble": true
+      "price": "3000000",
+      "isBuyAble": true,
+      "isBought": false
     }
   },
   {
@@ -280,11 +244,7 @@
     "width": 0.8,
     "height": 1.2,
     "depth": 0.05,
-    "position": {
-      "x": -2,
-      "y": 1.3,
-      "z": -3
-    },
+    "position": { "x": -2, "y": 1.3, "z": -3 },
     "rotationY": 1.570796326794896,
     "info": {
       "title": "Ngột ngạt",
@@ -294,8 +254,9 @@
       "paintingID": 12,
       "material": "Acylic trên toan",
       "size": "40x60cm",
-      "price": "1500000",
-      "isBuyAble": true
+      "price": "4000000",
+      "isBuyAble": true,
+      "isBought": false
     }
   },
   {
@@ -303,22 +264,19 @@
     "width": 0.8,
     "height": 1.2,
     "depth": 0.05,
-    "position": {
-      "x": -2,
-      "y": 1.3,
-      "z": 0
-    },
+    "position": { "x": -2, "y": 1.3, "z": 0 },
     "rotationY": 1.570796326794896,
     "info": {
-      "title": "Tuổi hồng",
+      "title": "Tuổi hồng",
       "poem": "",
       "description": "Những cô gái tuổi 16, tuổi trăm rằm đang trong độ tuổi đẹp nhất của đời người. Cuộc sống trong mắt  cô gái ấy luôn có màu hồng và ngập tràn trong sự hân hoan, hạnh phúc. <br>Những đóa hoa rắc tràn bố cục bức vẽ tượng trưng cho niềm vui của cô gái. Hoa che mái tóc, hoa trùm đôi mắt … Gương mặt cô ẩn hiện phía sau cùng bờ vai gợi cảm, cái cổ dày thon gọn đầy kiêu sa.",
       "year": "2022",
       "paintingID": 13,
       "material": "Acylic trên toan",
       "size": "40x60cm",
-      "price": "1500000",
-      "isBuyAble": true
+      "price": "2000000",
+      "isBuyAble": true,
+      "isBought": false
     }
   },
   {
@@ -326,11 +284,7 @@
     "width": 0.8,
     "height": 1.2,
     "depth": 0.05,
-    "position": {
-      "x": -2,
-      "y": 1.3,
-      "z": 3
-    },
+    "position": { "x": -2, "y": 1.3, "z": 3 },
     "rotationY": 1.570796326794896,
     "info": {
       "title": "Duyên thầm",
@@ -340,8 +294,9 @@
       "paintingID": 14,
       "material": "Acylic trên toan",
       "size": "40x60cm",
-      "price": "1500000",
-      "isBuyAble": true
+      "price": "3000000",
+      "isBuyAble": true,
+      "isBought": false
     }
   },
   {
@@ -349,11 +304,7 @@
     "width": 0.8,
     "height": 1.2,
     "depth": 0.05,
-    "position": {
-      "x": -3,
-      "y": 1.3,
-      "z": 4
-    },
+    "position": { "x": -3, "y": 1.3, "z": 4 },
     "rotationY": 0,
     "info": {
       "title": "Áp lực vô hình",
@@ -363,8 +314,9 @@
       "paintingID": 15,
       "material": "Acylic trên toan",
       "size": "40x60cm",
-      "price": "1500000",
-      "isBuyAble": true
+      "price": "2000000",
+      "isBuyAble": true,
+      "isBought": false
     }
   },
   {
@@ -372,11 +324,7 @@
     "width": 0.8,
     "height": 1.2,
     "depth": 0.05,
-    "position": {
-      "x": 3,
-      "y": 1.3,
-      "z": 4
-    },
+    "position": { "x": 3, "y": 1.3, "z": 4 },
     "rotationY": 0,
     "info": {
       "title": "Em gái nhỏ",
@@ -387,7 +335,8 @@
       "material": "Acylic trên toan",
       "size": "40x60cm",
       "price": "1500000",
-      "isBuyAble": true
+      "isBuyAble": true,
+      "isBought": false
     }
   },
   {
@@ -395,11 +344,7 @@
     "width": 0.6,
     "height": 0.8,
     "depth": 0.05,
-    "position": {
-      "x": 2,
-      "y": 1.3,
-      "z": 3
-    },
+    "position": { "x": 2, "y": 1.3, "z": 3 },
     "rotationY": -1.570796326794896,
     "info": {
       "title": "Giấc mơ của mẹ",
@@ -409,8 +354,9 @@
       "paintingID": 17,
       "material": "Acylic trên toan",
       "size": "30x40cm",
-      "price": "1500000",
-      "isBuyAble": true
+      "price": "5000000",
+      "isBuyAble": true,
+      "isBought": false
     }
   },
   {
@@ -418,11 +364,7 @@
     "width": 0.6,
     "height": 0.6,
     "depth": 0.05,
-    "position": {
-      "x": 2,
-      "y": 1.3,
-      "z": 0
-    },
+    "position": { "x": 2, "y": 1.3, "z": 0 },
     "rotationY": -1.570796326794896,
     "info": {
       "title": "Làm điệu",
@@ -432,20 +374,17 @@
       "paintingID": 18,
       "material": "Acylic trên toan",
       "size": "30x30cm",
-      "price": "1500000",
-      "isBuyAble": true
+      "price": "2000000",
+      "isBuyAble": true,
+      "isBought": false
     }
   },
   {
     "imgSrc": "./artwork/artwork20.png",
-    "width": 0.6,
-    "height": 0.8,
+    "width": 0.8,
+    "height": 1,
     "depth": 0.05,
-    "position": {
-      "x": 2,
-      "y": 1.3,
-      "z": -3
-    },
+    "position": { "x": 2, "y": 1.3, "z": -3 },
     "rotationY": -1.570796326794896,
     "info": {
       "title": "Sự bình thản",
@@ -454,9 +393,10 @@
       "year": "2022",
       "paintingID": 19,
       "material": "Acylic trên toan",
-      "size": "30x40cm",
-      "price": "1500000",
-      "isBuyAble": true
+      "size": "40x60cm",
+      "price": "3000000",
+      "isBuyAble": true,
+      "isBought": false
     }
   },
   {
@@ -464,22 +404,19 @@
     "width": 0.6,
     "height": 0.8,
     "depth": 0.05,
-    "position": {
-      "x": 3,
-      "y": 1.3,
-      "z": -4
-    },
+    "position": { "x": 3, "y": 1.3, "z": -4 },
     "rotationY": 3.141592653589793,
     "info": {
-      "title": "Gương mặt giấu kín",
+      "title": "Giấu mặt",
       "poem": "",
       "description": "Phụ nữ và Hoa như hai là một, như một mà là hai là bởi họ luôn đẹp như loài hoa và mỏng manh yếu đuối như những cánh hoa. Cả thế giới này tôn thờ vẻ đẹp đó nên cho dù họ là ai, họ ở đâu, họ là tầng lớp nào. Họ kiêu sa hay trần trụi thì vẫn là những bông hoa đẹp nhất. Bức tranh thể hiện nét đẹp của một người phụ nữ giấu mặt để nói lên điều đó. ",
       "year": "2023",
       "paintingID": 20,
       "material": "Acylic trên toan",
       "size": "30x40cm",
-      "price": "1500000",
-      "isBuyAble": true
+      "price": "3000000",
+      "isBuyAble": true,
+      "isBought": false
     }
   },
   {
@@ -487,11 +424,7 @@
     "width": 0.6,
     "height": 0.8,
     "depth": 0.05,
-    "position": {
-      "x": 4,
-      "y": 1.3,
-      "z": -3
-    },
+    "position": { "x": 4, "y": 1.3, "z": -3 },
     "rotationY": 1.570796326794896,
     "info": {
       "title": "Cô gái IRAN",
@@ -501,8 +434,9 @@
       "paintingID": 21,
       "material": "Acylic trên toan",
       "size": "30x40cm",
-      "price": "1500000",
-      "isBuyAble": true
+      "price": "2000000",
+      "isBuyAble": true,
+      "isBought": false
     }
   },
   {
@@ -510,11 +444,7 @@
     "width": 0.6,
     "height": 0.8,
     "depth": 0.05,
-    "position": {
-      "x": 4,
-      "y": 1.3,
-      "z": 0
-    },
+    "position": { "x": 4, "y": 1.3, "z": 0 },
     "rotationY": 1.570796326794896,
     "info": {
       "title": "Tỏa sáng",
@@ -524,8 +454,9 @@
       "paintingID": 22,
       "material": "Acylic trên toan",
       "size": "30x40cm",
-      "price": "1500000",
-      "isBuyAble": true
+      "price": "2000000",
+      "isBuyAble": true,
+      "isBought": false
     }
   },
   {
@@ -533,11 +464,7 @@
     "width": 0.6,
     "height": 0.8,
     "depth": 0.05,
-    "position": {
-      "x": 4,
-      "y": 1.3,
-      "z": 3
-    },
+    "position": { "x": 4, "y": 1.3, "z": 3 },
     "rotationY": 1.570796326794896,
     "info": {
       "title": "Trăng rằm",
@@ -547,8 +474,9 @@
       "paintingID": 23,
       "material": "Acylic trên toan",
       "size": "30x40cm",
-      "price": "1500000",
-      "isBuyAble": true
+      "price": "3000000",
+      "isBuyAble": true,
+      "isBought": false
     }
   },
   {
@@ -556,22 +484,19 @@
     "width": 0.8,
     "height": 1.2,
     "depth": 0.05,
-    "position": {
-      "x": 4.45,
-      "y": 1.3,
-      "z": 6.95
-    },
+    "position": { "x": 4.45, "y": 1.3, "z": 6.95 },
     "rotationY": 3.141592653589793,
     "info": {
-      "title": "Cô gái hiện đại",
+      "title": "Cô gái hiện đại",
       "poem": "",
       "description": "Chân dung một cô gái hiện đại được thể hiện trên bình gốm nhằm truyền tải thông điệp về sự phá cách, đề cao cá tính mỗi cá nhân trong xã hội hiện đại ngày nay.<br>Cô gái với gu trang điểm lạ mắt ấn tượng như muốn thể hiện với thế giới về một cái Tôi đầy cá tính riêng của mình",
       "year": "2023",
       "paintingID": 24,
       "material": "Gốm",
       "size": "Cao 40cm, Rộng 20cm, Miệng 12cm",
-      "price": "1500000",
-      "isBuyAble": true
+      "price": "1000000",
+      "isBuyAble": true,
+      "isBought": false
     }
   },
   {
@@ -579,22 +504,19 @@
     "width": 0.8,
     "height": 0.8,
     "depth": 0.05,
-    "position": {
-      "x": 6.95,
-      "y": 1.3,
-      "z": 5
-    },
+    "position": { "x": 6.95, "y": 1.3, "z": 5 },
     "rotationY": -1.570796326794896,
     "info": {
-      "title": "Môi đỏ – Má hồng",
+      "title": "Môi đỏ – Má hồng",
       "poem": "",
       "description": "Tác phẩm thể hiện gương mặt một cô gái hiện đại với phong cách trang điểm mạnh có đôi mắt cụp xuống như đang nhìn lại về thế giới nội tâm của mình thể hiện con người hướng nội nhưng vẫn đầy quyến rũ và cá tính. <br> Thông điệp của tác phẩm là: Mỗi cô gái dù là hướng nội hay hướng ngoại đều là những bông hoa trong vườn hoa nhiều màu sắc của thế giới này",
       "year": "2023",
       "paintingID": 25,
       "material": "Gốm",
       "size": "Cao 30cm, Rộng 25cm, Miệng 8cm",
-      "price": "1500000",
-      "isBuyAble": true
+      "price": "1000000",
+      "isBuyAble": true,
+      "isBought": false
     }
   },
   {
@@ -602,11 +524,7 @@
     "width": 1,
     "height": 1.4,
     "depth": 0.05,
-    "position": {
-      "x": 6.95,
-      "y": 1.3,
-      "z": 1.5
-    },
+    "position": { "x": 6.95, "y": 1.3, "z": 1.5 },
     "rotationY": -1.570796326794896,
     "info": {
       "title": "Tình quê",
@@ -616,8 +534,9 @@
       "paintingID": 26,
       "material": "Acylic trên toan",
       "size": "50x70cm",
-      "price": "1500000",
-      "isBuyAble": true
+      "price": "4000000",
+      "isBuyAble": true,
+      "isBought": false
     }
   },
   {
@@ -625,11 +544,7 @@
     "width": 1.4,
     "height": 1,
     "depth": 0.05,
-    "position": {
-      "x": 6.95,
-      "y": 1.3,
-      "z": -1.5
-    },
+    "position": { "x": 6.95, "y": 1.3, "z": -1.5 },
     "rotationY": -1.570796326794896,
     "info": {
       "title": "Đồng giao tuổi thơ",
@@ -639,8 +554,9 @@
       "paintingID": 27,
       "material": "Acylic trên toan",
       "size": "70x50cm",
-      "price": "1500000",
-      "isBuyAble": true
+      "price": "5000000",
+      "isBuyAble": true,
+      "isBought": false
     }
   },
   {
@@ -648,22 +564,19 @@
     "width": 0.8,
     "height": 1.2,
     "depth": 0.05,
-    "position": {
-      "x": 6.95,
-      "y": 1.3,
-      "z": -5
-    },
+    "position": { "x": 6.95, "y": 1.3, "z": -5 },
     "rotationY": -1.570796326794896,
     "info": {
-      "title": "Cánh Cò Tuổi thơ",
+      "title": "Cánh cò tuổi thơ",
       "poem": "",
       "description": "Con cò đi đón cơn mưa Tối tăm mù mịt ai đưa cò về Những lời ru của Mẹ trong tuổi thơ tôi là những hình ảnh về con cò gầy guộc, lặn lội bờ ao đi ăn đêm. Thân cò gậy guộc là hình ảnh những người phụ nữ trong xã hội xưa đầy mong manh yếu ớt. Cò đang bay lên mà như bị sức nặng phải sà chân xuống. Bên dưới đó chỉ là những cây cỏ yếu ớt và mặt nước bao la khiến nó dường như không còn chỗ bấu víu . Bức tranh thể hiện sự cô đơn, yếu thế của người phụ nữ trong quá khứ.",
       "year": "2023",
       "paintingID": 28,
       "material": "Acylic trên toan",
       "size": "40x60cm",
-      "price": "1500000",
-      "isBuyAble": true
+      "price": "4000000",
+      "isBuyAble": true,
+      "isBought": false
     }
   },
   {
@@ -671,11 +584,7 @@
     "width": 0.8,
     "height": 1.2,
     "depth": 0.05,
-    "position": {
-      "x": 5,
-      "y": 1.3,
-      "z": -6.94
-    },
+    "position": { "x": 5, "y": 1.3, "z": -6.94 },
     "rotationY": 0,
     "info": {
       "title": "Bốn Mùa",
@@ -685,8 +594,9 @@
       "paintingID": 29,
       "material": "Gốm",
       "size": "Cao 35cm, Rộng 25cm, Miệng 15cm",
-      "price": "1500000",
-      "isBuyAble": true
+      "price": "2000000",
+      "isBuyAble": true,
+      "isBought": false
     }
   },
   {
@@ -694,11 +604,7 @@
     "width": 0.8,
     "height": 1,
     "depth": 0.05,
-    "position": {
-      "x": 3,
-      "y": 1.3,
-      "z": -6.94
-    },
+    "position": { "x": 3, "y": 1.3, "z": -6.94 },
     "rotationY": 0,
     "info": {
       "title": "Thuyền và Biển",
@@ -708,8 +614,9 @@
       "paintingID": 30,
       "material": "Acylic trên toan",
       "size": "40x50cm",
-      "price": "1500000",
-      "isBuyAble": true
+      "price": "3000000",
+      "isBuyAble": true,
+      "isBought": false
     }
   },
   {
@@ -717,11 +624,7 @@
     "width": 1.2,
     "height": 1.6,
     "depth": 0.05,
-    "position": {
-      "x": 0,
-      "y": 1.3,
-      "z": -6.94
-    },
+    "position": { "x": 0, "y": 1.3, "z": -6.94 },
     "rotationY": 0,
     "info": {
       "title": "Cơn mưa đi ngang",
@@ -731,8 +634,9 @@
       "paintingID": 31,
       "material": "Acylic trên toan",
       "size": "60x80cm",
-      "price": "1500000",
-      "isBuyAble": true
+      "price": "9000000",
+      "isBuyAble": true,
+      "isBought": false
     }
   }
 ]
