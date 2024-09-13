@@ -27,7 +27,7 @@ app.post("/", async (req, res, next) => {
     let paintingData = fs.readFileSync('./paintingData.json');
     paintingData = JSON.parse(paintingData);
     let painting = paintingData[req.body.paintingID - 1];
-    paintingData[req.body.paintingID - 1].info.isBought = false;
+    paintingData[req.body.paintingID - 1].info.isBought = true;
     fs.writeFileSync('./paintingData.json', JSON.stringify(paintingData));
     var content = '';
     content += `
@@ -42,15 +42,15 @@ app.post("/", async (req, res, next) => {
             <p>Địa điểm: Không gian văn hóa Đông Tây ( Làng sinh viên Hacinco) số 79 Phố Ngụy Như Kon Tum – quận Thanh Xuân – thành phố Hà Nội. </p>
             <p>Con xin gửi lại 1 số thông tin để hoàn tất việc mua tranh.</p>
             
-            Tên tác phẩm: <b><i>${painting.info.title}</i></b>
-            Bức tranh số: <b>${+req.body.paintingID}</b>
-            Kích thước: <b>${painting.info.size}</b>
-            Chất liệu: <b>${painting.info.material}</b>
-            Giá bán:  <b>${req.body.price}</b> đồng
-            Thông tin chuyển khoản: ...
-            Số tài khoản: ...
-            Ngân hàng ...
-            Chủ tài khoản: Vũ Minh Anh
+            Tên tác phẩm: <b><i>${painting.info.title}</i></b> <br>
+            Bức tranh số: <b>${+req.body.paintingID}</b><br>
+            Kích thước: <b>${painting.info.size}</b><br>
+            Chất liệu: <b>${painting.info.material}</b><br>
+            Giá bán:  <b>${req.body.price}</b> đồng<br>
+            Thông tin chuyển khoản: Mua tranh ủng hộ cho dự án “Một bức vẽ – Triệu niềm vui”. Mã số bức tranh: ${+req.body.paintingID}<br>
+            Số tài khoản: 0867060156<br>
+            Ngân hàng MB bank <br>
+            Chủ tài khoản: Vũ Minh Anh<br>
             Trân trọng!
         </div>
     </div>
@@ -81,7 +81,7 @@ let transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 465,
     auth: {
-        user: 'noreply.halvamericanstudy@gmail.com',
-        pass: 'xwww jtlr zpbs vqmu'
+        user: 'herstoryexhibit@gmail.com',
+        pass: 'mjcu kmdi lzsm hnaw'
     }
 });
