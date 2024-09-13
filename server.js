@@ -4,6 +4,8 @@ const fs = require('fs');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 
+require('dotenv').config();
+
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -73,7 +75,7 @@ app.post("/", async (req, res, next) => {
     });
 })
 
-app.listen(3000, () => {
+app.listen(3007, () => {
     console.log('Server is running on port 3000');
 })
 
@@ -81,7 +83,7 @@ let transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 465,
     auth: {
-        user: 'herstoryexhibit@gmail.com',
-        pass: 'mjcu kmdi lzsm hnaw'
+        user: process.env.SMTP_MAIL,
+        pass: process.env.SMTP_PASSWORD
     }
 });
