@@ -12,7 +12,7 @@ export function displayPaintingInfo(data) {
     document.querySelector("#painting_size").textContent = data.info.size;
     document.querySelector("#painting_link").src = data.link;
     document.querySelector("#paintingID").textContent = data.info.paintingID + 1;
-    document.querySelector("#painting_price").value = `${data.info.price} VND`;
+    document.querySelector("#painting_price").value = `${moneyToString(data.info.price)} VND`;
     document.querySelector("#price").value = data.info.value;
     document.querySelector("#price").step = 100000;
     document.querySelector("#price").min = data.info.price;
@@ -45,4 +45,8 @@ export function hidePaintingInfo() {
     const infoDiv = document.querySelector("#painting_info");
     // Remove the active class from the div element to hide
     infoDiv.classList.remove("show");
+}
+
+function moneyToString(num) {
+    return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
 }

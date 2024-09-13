@@ -1,8 +1,8 @@
 [
   {
-    "imgSrc": "./artwork/artwork1.png",
-    "width": 2.5,
-    "height": 1.5,
+    "imgSrc": "./artwork/artwork1.jpg",
+    "width": 3,
+    "height": 2,
     "depth": 0.05,
     "position": {
       "x": 0,
@@ -83,7 +83,7 @@
     },
     "rotationY": 1.570796326794896,
     "info": {
-      "title": "Duyên",
+      "title": "Trúc xinh",
       "poem": "Trúc xinh trúc mọc đầu đình <br> Em xinh em đứng một mình cũng xinh.<br> Trúc xinh trúc mọc bờ ao <br> Em xinh em đứng chỗ nào cũng xinh'",
       "description": "Cô gái trong ca dao gắn liền với hình ảnh khóm trúc, mái đình cổ xưa…. Tôi đã vẽ lại hình ảnh đó trong trí tưởng tượng của mình về một người phụ nữ truyền thống. <br> Cô gái với tà áo dài bên rặng trúc xanh yên bình. Bên dưới là hình ảnh đóa sen thơm ngát tượng trưng cho vẻ đẹp tâm hồn người phụ nữ. Cá chép hóa rồng là hình tượng của một tương lai rực rỡ.",
       "year": "2023",
@@ -134,7 +134,7 @@
       "title": "Lòng Mẹ",
       "poem": "Con dẫu lớn vẫn là con của Mẹ <br> Đi suốt đời Lòng mẹ vẫn theo con",
       "description": "Câu ca dao là biểu tượng vĩnh cữu cho Lòng mẹ đối với con cái.  Với mẹ con vẫn luôn là thơ bé như ngày nào. Bố cục bức vẽ sử dụng các họa tiết, đường nét Tròn, Mềm mại làm cho hai mẹ con như hòa quyện vào nhau dưới bóng cây lớn của tình thương. ",
-      "year": "2022",
+      "year": "2023",
       "paintingID": 5,
       "material": "Acylic trên toan",
       "size": "40x60cm",
@@ -158,7 +158,7 @@
       "title": "Suy tư",
       "poem": "",
       "description": "Bức Vẽ mô tả một người  phụ nữ đang mơ ước về tương lai tự do phía trước. người phụ nữ này đang trong một tâm trạng suy tư vô định nên mơ ước được sổ lồng như loài chim bay lượn trên bầu trời.<br> Gam màu trầm thể hiện cho sự bình yên trong cuộc sống hiện tại của cô ấy.",
-      "year": "2022",
+      "year": "2024",
       "paintingID": 6,
       "material": "Acylic trên toan",
       "size": "40x60cm",
@@ -227,10 +227,10 @@
     },
     "rotationY": -1.570796326794896,
     "info": {
-      "title": "Hoa mùa hè",
+      "title": "Hoa mùa hè",
       "poem": "Thân em như hạt mưa rào,<br>Hạt rơi xuống giếng, hạt vào vườn hoa.<br>Thân em như hạt mưa sa,<br>Hạt vào đài các, hạt ra ruộng cày",
       "description": "Câu ca dao trên nói lên thân phận may rủi của người phụ nữ trong xã hội phong kiến. Cuộc sống của họ có thể một bước lên Tiên hay vất vả lầm than nếu được gả vào các gia đình chồng khác nhau. Hình ảnh mô tả một người phụ nữ lam lũ đang làm việc trên cánh đồng với tư thế lao động luôn phải nhìn xuống đất nhằm thể hiện sự bế tắc, vô định trong xã hội cũ.",
-      "year": "2022",
+      "year": "2023",
       "paintingID": 6,
       "material": "Acylic trên toan",
       "size": "30x40cm",
@@ -278,7 +278,7 @@
       "title": "Cô gái nhút nhát",
       "poem": "",
       "description": "Thiếu nữ đang che giấu gương mặt của mình dưới một chùm hoa rực rỡ. Cô gái e thẹn bởi chất nữ tính của mình nhưng vẫn đang ngầm khoe vẻ đẹp kiều diễm như những bông hoa đang nở rộ. Bàn tay cầm bông hoa đưa lên phía trước ngụ ý rằng người con gái này cho dù có e lệ, nhút nhát, che đậy vẻ bên ngoài của mình thì cô ấy vẫn luôn đẹp như đóa hoa kia.<br> Vậy Người đàn ông nào đủ tinh ý để nhận ra điều này? ",
-      "year": "2022",
+      "year": "2023",
       "paintingID": 11,
       "material": "Acylic trên toan",
       "size": "30x40cm",
@@ -289,8 +289,8 @@
   },
   {
     "imgSrc": "./artwork/artwork13.png",
-    "width": 0.8,
-    "height": 1.2,
+    "width": 0.6,
+    "height": 0.8,
     "depth": 0.05,
     "position": {
       "x": -2,
@@ -305,7 +305,7 @@
       "year": "2024",
       "paintingID": 12,
       "material": "Acylic trên toan",
-      "size": "40x60cm",
+      "size": "30x40cm",
       "price": "4000000",
       "isBuyAble": true,
       "isBought": false
@@ -313,8 +313,8 @@
   },
   {
     "imgSrc": "./artwork/artwork14.png",
-    "width": 0.8,
-    "height": 1.2,
+    "width": 0.6,
+    "height": 0.8,
     "depth": 0.05,
     "position": {
       "x": -2,
@@ -326,10 +326,10 @@
       "title": "Tuổi hồng",
       "poem": "",
       "description": "Những cô gái tuổi 16, tuổi trăm rằm đang trong độ tuổi đẹp nhất của đời người. Cuộc sống trong mắt  cô gái ấy luôn có màu hồng và ngập tràn trong sự hân hoan, hạnh phúc. <br>Những đóa hoa rắc tràn bố cục bức vẽ tượng trưng cho niềm vui của cô gái. Hoa che mái tóc, hoa trùm đôi mắt … Gương mặt cô ẩn hiện phía sau cùng bờ vai gợi cảm, cái cổ dày thon gọn đầy kiêu sa.",
-      "year": "2022",
+      "year": "2024",
       "paintingID": 13,
       "material": "Acylic trên toan",
-      "size": "40x60cm",
+      "size": "30x40cm",
       "price": "2000000",
       "isBuyAble": true,
       "isBought": false
@@ -337,8 +337,8 @@
   },
   {
     "imgSrc": "./artwork/artwork15.png",
-    "width": 0.8,
-    "height": 1.2,
+    "width": 0.6,
+    "height": 0.8,
     "depth": 0.05,
     "position": {
       "x": -2,
@@ -353,7 +353,7 @@
       "year": "2023",
       "paintingID": 14,
       "material": "Acylic trên toan",
-      "size": "40x60cm",
+      "size": "30x40cm",
       "price": "3000000",
       "isBuyAble": true,
       "isBought": false
@@ -361,8 +361,8 @@
   },
   {
     "imgSrc": "./artwork/artwork16.png",
-    "width": 0.8,
-    "height": 1.2,
+    "width": 0.6,
+    "height": 0.8,
     "depth": 0.05,
     "position": {
       "x": -3,
@@ -371,13 +371,13 @@
     },
     "rotationY": 0,
     "info": {
-      "title": "Áp lực vô hình",
+      "title": "Áp lực vô hình",
       "poem": "",
       "description": "Người Phụ nữ châu Á nói chung và Việt Nam nói riêng đôi khi hay phải chịu rất nhiều áp lực vô hình trong cuộc sống bởi những quan điểm lễ giáo truyền thống.<br> Bức vẽ mô tả một cô gái đang sống trong một bầu không khí tiêu cực với vô vàn ánh mắt phán xét cuộc sống của cô. Dưới sự phán xét cô bỗng thấy mình trở nên nhỏ bé và những ánh mắt ấy nó càng lớn dần lên bóp nghẹt cuộc đời cô ấy. <br>Thông điệp gửi đến là Mỗi người phụ nữ cần trở nên mạnh mẽ sống với chính mình để không bị áp lực bởi sự phán xét bên ngoài. ",
-      "year": "2022",
+      "year": "2024",
       "paintingID": 15,
       "material": "Acylic trên toan",
-      "size": "40x60cm",
+      "size": "30x40cm",
       "price": "2000000",
       "isBuyAble": true,
       "isBought": false
@@ -385,8 +385,8 @@
   },
   {
     "imgSrc": "./artwork/artwork17.png",
-    "width": 0.8,
-    "height": 1.2,
+    "width": 0.6,
+    "height": 0.8,
     "depth": 0.05,
     "position": {
       "x": 3,
@@ -395,13 +395,13 @@
     },
     "rotationY": 0,
     "info": {
-      "title": "Em gái nhỏ",
+      "title": "Em gái nhỏ",
       "poem": "",
       "description": "Bé gái Mimi dễ thương đang quay lưng lại mà vẫn không giấu đi nét đẹp của mình. Chiếc váy xòe xinh xinh, mái tóc dài được Mẹ tết điệu đà... Bức tranh sử dụng gam màu hồng như lứa tuổi hồng của em bé. Đây là tác phẩm vẽ qua sự hồi tưởng bằng trí nhớ về em gái tôi ngày em còn nhỏ. ",
       "year": "2023",
       "paintingID": 16,
       "material": "Acylic trên toan",
-      "size": "40x60cm",
+      "size": "30x40cm",
       "price": "1500000",
       "isBuyAble": true,
       "isBought": false
@@ -422,7 +422,7 @@
       "title": "Giấc mơ của mẹ",
       "poem": "",
       "description": "Với người phụ nữ nói chung và phụ nữ Việt Nam nói riêng thì tình mẫu tử là sự thiêng liêng cao quý nhất. Trong mỗi giấc mơ của người Mẹ bao giờ cũng có hình bóng của con mình. Bức vẽ dùng gam màu Hồng chủ đạo trên nền đen nhằm lột tả sự ấm áp của tình mẹ con. Bố cục Mẹ và con nương tựa vào nhau, ôm ấp không thể tách rời. Em bé tuy nằm trong vòng tay mẹ nhưng lại trở thành 1 điểm tựa cho cuộc đời người Mẹ.",
-      "year": "2022",
+      "year": "2023",
       "paintingID": 17,
       "material": "Acylic trên toan",
       "size": "30x40cm",
@@ -470,7 +470,7 @@
       "title": "Sự bình thản",
       "poem": "",
       "description": "Bức tranh mô tả hình ảnh người phụ nữ trước giàn hỏa thiêu. Cô ây đối mặt với cái chết bằng một nét mặt bình thản và không chút sợ hãi. Bản lĩnh và thần thái không dao động của người phụ nữ được tác giả miêu tả bằng những gam màu tối, đơn giản đầy ấn tượng",
-      "year": "2022",
+      "year": "2024",
       "paintingID": 19,
       "material": "Acylic trên toan",
       "size": "40x60cm",
@@ -530,7 +530,7 @@
   {
     "imgSrc": "./artwork/artwork23.png",
     "width": 0.6,
-    "height": 0.8,
+    "height": 0.6,
     "depth": 0.05,
     "position": {
       "x": 4,
@@ -545,7 +545,7 @@
       "year": "2024",
       "paintingID": 22,
       "material": "Acylic trên toan",
-      "size": "30x40cm",
+      "size": "30x30cm",
       "price": "2000000",
       "isBuyAble": true,
       "isBought": false
@@ -659,7 +659,7 @@
     },
     "rotationY": -1.570796326794896,
     "info": {
-      "title": "Đồng giao tuổi thơ",
+      "title": "Đồng dao tuổi thơ",
       "poem": "",
       "description": "Là những hình ảnh về những trò chơi tuổi thơ, những câu Đồng Dao trong những câu chuyện Mẹ kể tôi nghe luôn hiện hữu trong những giấc mơ của tôi.",
       "year": "2023",
@@ -737,7 +737,7 @@
       "year": "2023",
       "paintingID": 30,
       "material": "Acylic trên toan",
-      "size": "40x50cm",
+      "size": "40x60cm",
       "price": "3000000",
       "isBuyAble": true,
       "isBought": false
