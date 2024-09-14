@@ -27,6 +27,7 @@ canvas {
 }
 img {
   width: 100%;
+  object-fit: contain;
 }
 #menu img {
   width: 100%;

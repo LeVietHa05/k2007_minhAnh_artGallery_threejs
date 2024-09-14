@@ -85,12 +85,13 @@
             <p>Bấm F để hiện/ẩn chuột / Press F to hide/unhide the mouse</p>
         </div>
     </div>
-    
+
     <div id="painting_info">
         <div
             style="width:25%; display: flex; flex-direction: column; justify-content: space-between; overflow-y: auto;">
             <div>
-                <h3 style="font-size: 30px; margin-top: 12px; line-height: 60px;" class="playwrite-cu" id="painting_title"></h3>
+                <h3 style="font-size: 30px; margin-top: 12px; line-height: 60px;" class="playwrite-cu"
+                    id="painting_title"></h3>
                 <p><i id="painting_poem"></i></p><br>
                 <p id="painting_description"></p>
                 <hr>
@@ -125,7 +126,8 @@
                         <input type="number" class="form-control" name="phoneNum" id="phoneNum" required>
                     </div> -->
                     <div class="mb-3">
-                        <input type="email" class="form-control" id="email_address" placeholder="Địa chỉ Email">
+                        <input type="email" class="form-control" id="email_address"
+                            placeholder="Địa chỉ Email (Nên dùng Gmail)">
                     </div>
                     <div class="mb-3 row">
                         <label for="painting_price" class="col-sm-6 col-form-label">Giá khởi điểm: </label>
@@ -163,8 +165,19 @@
         let soldPainting = [];
         let purchare_btn = document.querySelector('#purchare_form button');
         purchare_btn.addEventListener("click", (e) => {
+            purchare_btn.textContent = "Đang xử lý...";
             e.preventDefault();
             soldPainting.push(document.querySelector('#paintingID').textContent);
+            let email = document.querySelector('#email_address').value
+            if (!validateEmail(email)) {
+                alert("Xin vui lòng nhập mail hợp lệ!")
+                return;
+            }
+            let phone = document.querySelector('#phoneNum').value
+            if (!validatePhone(phone)) {
+                alert("Xin vui lòng nhập số điện thoại hợp lệ!")
+                return;
+            }
             fetch("/", {
                 method: "POST",
                 headers: {
@@ -172,8 +185,8 @@
                 },
                 body: JSON.stringify({
                     name: document.querySelector('#person_name').value,
-                    phone: document.querySelector('#phoneNum').value,
-                    email: document.querySelector('#email_address').value,
+                    phone: phone,
+                    email: email,
                     paintingID: document.querySelector('#paintingID').textContent,
                     price: document.querySelector('#price').value
                 })
@@ -181,8 +194,29 @@
                 .then(res => res.json())
                 .then(data => {
                     alert(data.mess);
+                    if (data.status == "success") {
+                        document.querySelector("#purchare_form button").disabled = true;
+                        document.querySelector('#isSold').style.display = "block";
+                        purchare_btn.textContent = "Đã đặt mua";
+                    } else {
+                        purchare_btn.textContent = "Đặt Mua - Purchare";
+                    }
                 })
         })
+
+        function validateEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        function validatePhone(phone) {
+            if (phone.length != 10) {
+                return false;
+            }
+
+            const phoneRegex = /^\d{10}$/;
+            return phoneRegex.test(phone);
+        }
     </script>
     <script type="module" src="./main.js"></script>
 </body>

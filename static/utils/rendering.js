@@ -4,7 +4,7 @@ import { displayPaintingInfo, hidePaintingInfo } from './paintingInfo.js';
 import { updateMovement } from './movement.js';
 import { isClickedPainting, isHoverPainting, isNearPainting, paintingToShow, nearCheck, isControlEnabled } from './clickHandle.js';
 
-let isShowingInfo = false;
+export let isShowingInfo = false;
 
 export function setupRendering(
     scene,

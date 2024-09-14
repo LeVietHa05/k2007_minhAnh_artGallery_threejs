@@ -20,15 +20,31 @@ app.get("/paintingData", async (req, res) => {
     res.json(JSON.parse(paintingData));
 })
 
+let soldPainting = [];
+
 app.post("/", async (req, res, next) => {
     console.log(req.body);
-    if (!req.body.name || !req.body.email || !req.body.phone || !req.body.price || !req.body.paintingID) {
-        return res.json({ mess: 'Vui lòng nhập đầy đủ thông tin' });
+
+    if (!req.body.name || !req.body.email || !req.body.phone || !req.body.paintingID) {
+        return res.json({ mess: 'Vui lòng nhập đầy đủ thông tin', status: 'error' });
+    }
+
+    if (!parseInt(req.body.price)) {
+        return res.json({ mess: 'Giá không hợp lệ. Ví dụ hợp lệ: 5000000', status: 'error' });
     }
 
     let paintingData = fs.readFileSync('./paintingData.json');
     paintingData = JSON.parse(paintingData);
     let painting = paintingData[req.body.paintingID - 1];
+    //check if painting is bought
+    if (painting.info.isBought) {
+        return res.json({ mess: 'Bức tranh đã bán cho người khác. Rất xin lỗi bạn. Bạn vui lòng tải lại trang để cập nhật thông tin mới nhất nhé', status: 'error' });
+    }
+    //check if price is lower than the current price
+    if (+req.body.price < +painting.info.price) {
+        return res.json({ mess: 'Giá bạn đưa ra không hợp lý', status: 'error' });  
+    }
+    //update bought status
     paintingData[req.body.paintingID - 1].info.isBought = true;
     fs.writeFileSync('./paintingData.json', JSON.stringify(paintingData));
     var content = '';
@@ -67,10 +83,10 @@ app.post("/", async (req, res, next) => {
     transporter.sendMail(mailOption, function (err, info) {
         if (err) {
             console.log(err);
-            res.json({ mess: 'Lỗi gửi mail' });
+            res.json({ mess: 'Lỗi gửi mail', status: 'error' });
         } else {
             console.log('Message sent: ' + info.response);
-            res.json({ mess: 'Xác nhận đấu giá. Vui lòng kiểm tra Email của bạn' });
+            res.json({ mess: 'Xác nhận đấu giá. Vui lòng kiểm tra Email của bạn' , status: 'success'});
         }
     });
 })

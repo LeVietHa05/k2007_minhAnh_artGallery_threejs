@@ -16,6 +16,7 @@ export function displayPaintingInfo(data) {
     document.querySelector("#price").value = data.info.value;
     document.querySelector("#price").step = 100000;
     document.querySelector("#price").min = data.info.price;
+    purchare_btn.textContent = "Đặt Mua - Purchare"
 
     if (!data.info.isBuyAble) {
         document.querySelector('#isSold').style.display = "none";

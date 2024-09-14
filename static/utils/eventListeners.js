@@ -1,6 +1,7 @@
 import { keyPressed } from './movement.js';
 import { startAudio, stopAudio } from './audioGuide.js';
 import { hidePaintingInfo } from './paintingInfo.js';
+import { isShowingInfo } from './rendering.js';
 
 import { controls } from '../../main.js';
 
@@ -15,6 +16,9 @@ export function setupEventListeners(controls) {
 }
 
 function onKeyDown(e) {
+    if (isShowingInfo) {
+        return;
+    }
     if (e.key in keyPressed) {
         keyPressed[e.key] = true;
     }
@@ -41,6 +45,9 @@ function onKeyDown(e) {
 }
 
 function onKeyUp(e) {
+    if (isShowingInfo) {
+        return;
+    }
     if (e.key in keyPressed) {
         keyPressed[e.key] = false;
     }
@@ -52,14 +59,14 @@ function onKeyUp(e) {
         else
             controls.lock();
     }
-    if (e.key === "v") {
-        document.addEventListener("mousedown", (e) => {
-            controls.lock();
-        })
-        document.addEventListener("mouseup", (e) => {
-            controls.unlock();
-        })
-    }
+    // if (e.key === "v") {
+    //     document.addEventListener("mousedown", (e) => {
+    //         controls.lock();
+    //     })
+    //     document.addEventListener("mouseup", (e) => {
+    //         controls.unlock();
+    //     })
+    // }
     // if (e.key === "Escape") {
     //     showMenu();
     //     isShowMenuUnlock = true;
