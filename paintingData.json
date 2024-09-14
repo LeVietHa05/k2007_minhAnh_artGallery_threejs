@@ -594,7 +594,7 @@
       "paintingID": 24,
       "material": "Gốm",
       "size": "Cao 40cm, Rộng 20cm, Miệng 12cm",
-      "price": "1000000",
+      "price": "2000000",
       "isBuyAble": true,
       "isBought": false
     }
@@ -618,7 +618,7 @@
       "paintingID": 25,
       "material": "Gốm",
       "size": "Cao 30cm, Rộng 25cm, Miệng 8cm",
-      "price": "1000000",
+      "price": "2000000",
       "isBuyAble": true,
       "isBought": false
     }
