@@ -1,6 +1,7 @@
 [
     {
         "imgSrc": "./artworkResized/artwork1.jpeg",
+        "imgSrc_en": "./artworkResized/anh1_en.jpeg",
         "width": 3,
         "height": 2,
         "depth": 0.05,
@@ -44,7 +45,7 @@
             "size": "40x60cm",
             "price": "5000000",
             "isBuyAble": true,
-            "isBought": false
+            "isBought": true
         }
     },
     {
@@ -116,7 +117,7 @@
             "size": "40x60cm",
             "price": "4000000",
             "isBuyAble": true,
-            "isBought": false
+            "isBought": true
         }
     },
     {
@@ -140,7 +141,7 @@
             "size": "40x60cm",
             "price": "5000000",
             "isBuyAble": true,
-            "isBought": false
+            "isBought": true
         }
     },
     {
@@ -164,7 +165,7 @@
             "size": "40x60cm",
             "price": "4000000",
             "isBuyAble": true,
-            "isBought": false
+            "isBought": true
         }
     },
     {
@@ -260,7 +261,7 @@
             "size": "30x40cm",
             "price": "4000000",
             "isBuyAble": true,
-            "isBought": false
+            "isBought": true
         }
     },
     {
@@ -284,7 +285,7 @@
             "size": "30x40cm",
             "price": "3000000",
             "isBuyAble": true,
-            "isBought": false
+            "isBought": true
         }
     },
     {
@@ -332,7 +333,7 @@
             "size": "30x40cm",
             "price": "2000000",
             "isBuyAble": true,
-            "isBought": false
+            "isBought": true
         }
     },
     {
@@ -356,7 +357,7 @@
             "size": "30x40cm",
             "price": "3000000",
             "isBuyAble": true,
-            "isBought": false
+            "isBought": true
         }
     },
     {
@@ -371,16 +372,16 @@
         },
         "rotationY": 0,
         "info": {
-            "title": "Áp lực vô hình",
+            "title": "Những Đôi Mắt",
             "poem": "",
-            "description": "Người Phụ nữ châu Á nói chung và Việt Nam nói riêng đôi khi hay phải chịu rất nhiều áp lực vô hình trong cuộc sống bởi những quan điểm lễ giáo truyền thống.<br> Bức vẽ mô tả một cô gái đang sống trong một bầu không khí tiêu cực với vô vàn ánh mắt phán xét cuộc sống của cô. Dưới sự phán xét cô bỗng thấy mình trở nên nhỏ bé và những ánh mắt ấy nó càng lớn dần lên bóp nghẹt cuộc đời cô ấy. <br>Thông điệp gửi đến là Mỗi người phụ nữ cần trở nên mạnh mẽ sống với chính mình để không bị áp lực bởi sự phán xét bên ngoài. ",
+            "description": "Bức vẽ mô tả hình ảnh một cô gái khiếm thị. Cô lặng nhìn cuộc sống chỉ với một gam màu tuy nhiên xung quanh cô gái luôn có những đôi mắt khác soi sáng, dẫn đường cho Cô.<br>Tác giả sử dụng một gam màu xám duy nhất nhằm tả thực về hiện thực cuộc sống trong đời thường của cô gái. Tuy nhiên trong cái u ám đó vẫn luôn còn có những nguồn sáng khác hỗ trợ, giúp đỡ cô. Đó chính là thông điệp của tác giả về một tương lai phía trước",
             "year": "2024",
             "paintingID": 15,
             "material": "Acylic trên toan",
             "size": "30x40cm",
             "price": "2000000",
             "isBuyAble": true,
-            "isBought": false
+            "isBought": true
         }
     },
     {
@@ -404,7 +405,7 @@
             "size": "30x40cm",
             "price": "1500000",
             "isBuyAble": true,
-            "isBought": false
+            "isBought": true
         }
     },
     {
@@ -452,7 +453,7 @@
             "size": "30x30cm",
             "price": "2000000",
             "isBuyAble": true,
-            "isBought": false
+            "isBought": true
         }
     },
     {
@@ -500,7 +501,7 @@
             "size": "30x40cm",
             "price": "3000000",
             "isBuyAble": true,
-            "isBought": false
+            "isBought": true
         }
     },
     {
@@ -524,7 +525,7 @@
             "size": "30x40cm",
             "price": "2000000",
             "isBuyAble": true,
-            "isBought": false
+            "isBought": true
         }
     },
     {
@@ -548,7 +549,7 @@
             "size": "30x30cm",
             "price": "2000000",
             "isBuyAble": true,
-            "isBought": false
+            "isBought": true
         }
     },
     {
@@ -572,7 +573,7 @@
             "size": "30x40cm",
             "price": "3000000",
             "isBuyAble": true,
-            "isBought": false
+            "isBought": true
         }
     },
     {
@@ -596,7 +597,7 @@
             "size": "Cao 40cm, Rộng 20cm, Miệng 12cm",
             "price": "2000000",
             "isBuyAble": true,
-            "isBought": false
+            "isBought": true
         }
     },
     {
@@ -620,7 +621,7 @@
             "size": "Cao 30cm, Rộng 25cm, Miệng 8cm",
             "price": "2000000",
             "isBuyAble": true,
-            "isBought": false
+            "isBought": true
         }
     },
     {
@@ -644,7 +645,7 @@
             "size": "50x70cm",
             "price": "4000000",
             "isBuyAble": true,
-            "isBought": false
+            "isBought": true
         }
     },
     {
@@ -668,7 +669,7 @@
             "size": "70x50cm",
             "price": "5000000",
             "isBuyAble": true,
-            "isBought": false
+            "isBought": true
         }
     },
     {
@@ -740,7 +741,7 @@
             "size": "40x60cm",
             "price": "3000000",
             "isBuyAble": true,
-            "isBought": false
+            "isBought": true
         }
     },
     {
