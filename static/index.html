@@ -36,15 +36,19 @@
                 <img src="./img/banner.png" alt="dong lua" id="">
             </div>
             <div class="content">
-                <h1 class="roboto-bold" style="margin-bottom: 0;">DỰ ÁN “MỘT BỨC VẼ - TRIỆU NIỀM VUI"</h1>
+                <h1 class="roboto-bold" style="margin-bottom: 0;">
+                    DỰ ÁN “MỘT BỨC VẼ - TRIỆU NIỀM VUI"
+                </h1>
+                <h1 class="roboto-bold" style="margin-bottom: 0;">
+                    One Drawing - A million joys
+                </h1>
                 <div>
-                    <div class="qwitcher-grypen-regular" style="font-size: 50px;">Phụ nữ trong thơ ca và trong mắt em
+                    <div class="qwitcher-grypen-regular" style="font-size: 50px;">
+                        Phụ nữ trong thơ ca và trong mắt em
                     </div>
-
-                </div>
-                <!-- <h1 class="roboto-bold" style="margin-bottom: 0;">english version</h1> -->
-                <div>
-                    <!-- <div class="qwitcher-grypen-regular" style="font-size: 50px;">english version -->
+                    <div class="qwitcher-grypen-regular" style="font-size: 50px; margin-top: -30px;">
+                        Women in folk songs and my eyes
+                    </div>
                 </div>
                 <!-- <hr width="70%"> -->
                 <p>Through the paintings of Vũ Minh Anh</p>
@@ -55,16 +59,15 @@
             </div>
         </div>
     </div>
-    </div>
     <!-- <div class="audio-control">
         <button id="start-audio">Start Audio Guide</button>
         <button id="stop-audio">Stop Audio Guide</button>
     </div> -->
-    <div id="edit_button">
-        <div style=" display: inline-block;">
+    <div id="translate_button">
+        <div style=" display: inline-block; font-size: 24px;">
             <span class="material-symbols-outlined">
-                edit
-            </span>
+                translate
+            </span> - VI
         </div>
     </div>
 
@@ -95,7 +98,7 @@
                 <p><i id="painting_poem"></i></p><br>
                 <p id="painting_description"></p>
                 <hr>
-                <p>Mã Tranh: <i id="paintingID"></i></p>
+                <p><span id="translate-code">Mã Tranh</span>: <i id="paintingID"></i></p>
                 <p id="painting_material"></p>
                 <p id="painting_size"></p>
                 <p>Year: <i id="painting_year"></i></p>
@@ -105,7 +108,7 @@
                 Đã Bán
             </div>
             <div id="purchare_form_div" class="p-1em">
-                <legend style="font-size: 30px">Nếu bạn có hứng thú với bức tranh</legend>
+                <legend style="font-size: 30px" id="translate-legend">Nếu bạn có hứng thú với bức tranh</legend>
                 <form action="/" method="post" id="purchare_form">
                     <div class="row g-3 mb-3">
                         <div class="col">
@@ -130,7 +133,8 @@
                             placeholder="Địa chỉ Email (Nên dùng Gmail)">
                     </div>
                     <div class="mb-3 row">
-                        <label for="painting_price" class="col-sm-6 col-form-label">Giá khởi điểm: </label>
+                        <label for="painting_price" class="col-sm-6 col-form-label" id="translate-pricetag">Giá khởi
+                            điểm: </label>
                         <div class="col-sm-6 ">
                             <input type="text" readonly class="form-control-plaintext text-light" id="painting_price"
                                 value="123">
@@ -139,7 +143,8 @@
                     <div class="mb-3">
                         <input type="number" class="form-control" id="price" value="1500000" step="100000">
                     </div>
-                    <button type="submit" class="btn btn-primary" style="font-size: 1.4em">Đặt Mua - Purchare</button>
+                    <button type="submit" class="btn btn-primary" style="font-size: 1.4em">Đặt Mua -
+                        Purchare</button>
                 </form>
             </div>
         </div>

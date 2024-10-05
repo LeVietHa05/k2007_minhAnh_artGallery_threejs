@@ -8,6 +8,7 @@ export let isClickedPainting = false;
 export let isHoverPainting = false;
 export let paintingToShow = null;
 export let isControlEnabled = true;
+export let isTranslate = false;
 
 let lastPainting = -1;
 
@@ -16,9 +17,35 @@ let isDragging = false;
 let offset = new THREE.Vector3();
 let offset2 = new THREE.Vector3();
 
-document.querySelector('#edit_button').addEventListener('click', (e) => {
+document.querySelector('#edit_button')?.addEventListener('click', (e) => {
     // isEdit = !isEdit;
     e.target.textContent = isEdit ? 'Done' : 'Edit';
+})
+
+document.querySelector("#translate_button")?.addEventListener('click', (e) => {
+    isTranslate = !isTranslate;
+    if (isTranslate) {
+        document.querySelector("#translate-code").textContent = "Painting code"
+        document.querySelector("#translate-legend").textContent = "If you are interested"
+        document.querySelector("#translate-pricetag").textContent = "Starting from: "
+        document.querySelector("#isSold").textContent = "Sold"
+        alert("Selected language: English")
+    } else {
+        document.querySelector("#translate-code").textContent = "Mã tranh";
+        document.querySelector("#translate-legend").textContent = "Nếu bạn có hứng thú với bức tranh"
+        document.querySelector("#translate-pricetag").textContent = "Giá khởi điểm: "
+        document.querySelector("#isSold").textContent = "Đã bán"
+        alert("Ngôn ngữ đã chuyển sang tiếng Việt")
+    }
+
+    document.querySelector("#translate_button").innerHTML =
+        `<div style=" display: inline-block; font-size: 24px;">
+            <span class="material-symbols-outlined">
+                translate
+            </span> - ${isTranslate ? 'EN' : 'VI'}
+        </div>`
+
+
 })
 
 document.querySelector("#painting_info").addEventListener('click', (e) => {
@@ -32,7 +59,7 @@ document.querySelector("#painting_info").addEventListener('click', (e) => {
 
 document.querySelectorAll("input").forEach(input => {
     console.log(input);
-    input.addEventListener('focus', (e) => {    
+    input.addEventListener('focus', (e) => {
         console.log("focus");
         isControlEnabled = false;
     })

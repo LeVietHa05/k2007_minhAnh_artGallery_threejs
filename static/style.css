@@ -34,7 +34,7 @@ img {
   max-height: 400px;
 }
 
-#edit_button {
+#edit_button, #translate_button {
   position: absolute;
   bottom: 10px;
   left: 10px;

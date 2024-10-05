@@ -1,14 +1,30 @@
-
+import { isTranslate } from "./clickHandle.js";
 // Function to display painting info when the user clicks on/look at/or near a painting
 export function displayPaintingInfo(data) {
     // Get the div element where the painting info will be displayed
     const infoDiv = document.querySelector("#painting_info");
     //change the content of the div element to the painting info
-    document.querySelector("#painting_title").textContent = data.info.title;
+    if (isTranslate) {
+        data.info.title_en
+            ? document.querySelector("#painting_title").textContent = data.info.title_en
+            : document.querySelector("#painting_title").textContent = data.info.title;
+        // document.querySelector("#painting_poem").innerHTML = `"${data.info.poem_en}"`;
+        data.info.poem_en
+            ? document.querySelector("#painting_poem").innerHTML = `"${data.info.poem_en}"`
+            : document.querySelector("#painting_poem").innerHTML = `"${data.info.poem}"`;
+        data.info.description_en
+            ? document.querySelector("#painting_description").innerHTML = data.info.description_en
+            : document.querySelector("#painting_description").innerHTML = data.info.description;
+        data.info.material_en
+            ? document.querySelector("#painting_material").textContent = data.info.material_en
+            : document.querySelector("#painting_material").textContent = data.info.material;
+    } else {
+        document.querySelector("#painting_title").textContent = data.info.title;
+        document.querySelector("#painting_description").innerHTML = data.info.description;
+        document.querySelector("#painting_material").textContent = data.info.material;
+    }
     document.querySelector("#painting_poem").innerHTML = `"${data.info.poem}"`;
-    document.querySelector("#painting_description").innerHTML = data.info.description;
     document.querySelector("#painting_year").textContent = data.info.year;
-    document.querySelector("#painting_material").textContent = data.info.material;
     document.querySelector("#painting_size").textContent = data.info.size;
     document.querySelector("#painting_link").src = data.link;
     document.querySelector("#paintingID").textContent = data.info.paintingID + 1;
