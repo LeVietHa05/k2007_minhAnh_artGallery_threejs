@@ -21,9 +21,9 @@ export function displayPaintingInfo(data) {
     } else {
         document.querySelector("#painting_title").textContent = data.info.title;
         document.querySelector("#painting_description").innerHTML = data.info.description;
+        document.querySelector("#painting_poem").innerHTML = `"${data.info.poem}"`;
         document.querySelector("#painting_material").textContent = data.info.material;
     }
-    document.querySelector("#painting_poem").innerHTML = `"${data.info.poem}"`;
     document.querySelector("#painting_year").textContent = data.info.year;
     document.querySelector("#painting_size").textContent = data.info.size;
     document.querySelector("#painting_link").src = data.link;
