@@ -37,6 +37,7 @@ export function displayPaintingInfo(data) {
     if (!data.info.isBuyAble) {
         document.querySelector('#isSold').style.display = "none";
         document.querySelector("#purchare_form_div").style.display = "none";
+        document.querySelector("#painting_description").style.display = "none";
     } else {
         document.querySelector("#purchare_form_div").style.display = "block";
         if (data.info.isBought) {

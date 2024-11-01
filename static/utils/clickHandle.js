@@ -8,7 +8,7 @@ export let isClickedPainting = false;
 export let isHoverPainting = false;
 export let paintingToShow = null;
 export let isControlEnabled = true;
-export let isTranslate = false;
+export let isTranslate = true;
 
 let lastPainting = -1;
 
